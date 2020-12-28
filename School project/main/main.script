@@ -1,0 +1,27 @@
+function init(self) 
+	msg.post(".", "acquire_input_focus") --allows for inputs (gonna be necessary for the menu system
+	msg.post("#menu_proxy", "load") --loads the menu system when the thing is booted
+	self.current_collection = "#menu_proxy"
+	set_vsync = disable --disables vsync just removes it
+end
+
+function final(self)
+	msg.post(".","release_input_focus") --this does inverse of acquire focus
+end
+
+--this loads the main menu into main memory, and stuff can be taken in and out of main memory 
+--the currentlevel script is based off the a system implemented in the spotter tutorial
+function on_message(self, message_id, message, sender)
+	if message_id == hash("proxy_loaded") then
+		msg.post(sender, "enable")
+
+	elseif message_id == hash("level0") then
+		msg.post(self.current_collection, "unload") --unlodas the main menu when the button is pressed
+		msg.post("#level0_proxy", "load") --loads the main menu
+		self.current_collection = "#level0_proxy" --sets the currentcollection to this so it can be unloaded later
+		
+	--code that shutsdown the game when pressed
+	elseif message_id == hash("shutdown") then
+		msg.post(os.exit())
+	end
+end
