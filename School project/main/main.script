@@ -2,6 +2,9 @@ function init(self)
 	msg.post(".", "acquire_input_focus") --allows for inputs (gonna be necessary for the menu system
 	msg.post("#menu_proxy", "load") --loads the menu system when the thing is booted
 	self.current_collection = "#menu_proxy"
+
+	--camera script - should allow camera to track
+	msg.post("#camera", "acquire_camera_focus")
 end
 
 function final(self)
