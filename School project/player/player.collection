@@ -1,91 +1,11 @@
-name: "level0"
+name: "player"
 scale_along_z: 0
 embedded_instances {
-  id: "background"
-  data: "embedded_components {\n"
-  "  id: \"layer1\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
-  "default_animation: \\\"background upscaled\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 741.0\n"
-  "    y: 342.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"layer2\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
-  "default_animation: \\\"background upscaled\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 2217.0\n"
-  "    y: 342.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: -1.0
-    y: -2.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "player"
-  children: "movable_player"
-  data: ""
-  position {
-    x: 117.0
-    y: 80.0
-    z: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "movable_player"
+  id: "playermodel"
+  children: "go"
   data: "components {\n"
-  "  id: \"player\"\n"
-  "  component: \"/player/initiate_player.script\"\n"
+  "  id: \"movement\"\n"
+  "  component: \"/player/movement.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -99,10 +19,12 @@ embedded_instances {
   "  }\n"
   "}\n"
   "embedded_components {\n"
-  "  id: \"player_sprite\"\n"
-  "  type: \"collectionfactory\"\n"
-  "  data: \"prototype: \\\"/player/player.collection\\\"\\n"
-  "load_dynamically: true\\n"
+  "  id: \"animation_group\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/player/player.atlas\\\"\\n"
+  "default_animation: \\\"idle\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
   "    x: 0.0\n"
@@ -118,8 +40,64 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: -12.0
-    y: 9.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "go"
+  data: "components {\n"
+  "  id: \"camera_script\"\n"
+  "  component: \"/main/camera.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"camera\"\n"
+  "  type: \"camera\"\n"
+  "  data: \"aspect_ratio: 1.0\\n"
+  "fov: 0.7854\\n"
+  "near_z: 0.1\\n"
+  "far_z: 1000.0\\n"
+  "auto_aspect_ratio: 0\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -55.0
+    y: -80.0
     z: 0.0
   }
   rotation {

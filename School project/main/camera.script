@@ -1,0 +1,8 @@
+--camera script - should allow camera to track
+function init(self)
+	msg.post("#camera", "acquire_camera_focus")
+end
+
+function final(self)
+	msg.post("#camera", "release_camera_focus")
+end
