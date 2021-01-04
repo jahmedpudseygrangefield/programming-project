@@ -1,4 +1,4 @@
-script: "/main/menu.gui_script"
+script: "/main/scripts/menu.gui_script"
 fonts {
   name: "system_font"
   font: "/assets/fonts/menu.font"
@@ -100,7 +100,8 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Insert name\n"
+  text: "The Way Home\n"
+  "\n"
   ""
   font: "system_font"
   id: "title"

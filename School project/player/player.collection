@@ -60,7 +60,7 @@ embedded_instances {
   id: "go"
   data: "components {\n"
   "  id: \"camera_script\"\n"
-  "  component: \"/main/camera.script\"\n"
+  "  component: \"/main/scripts/camera.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
