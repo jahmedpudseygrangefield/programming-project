@@ -13,3 +13,6 @@ input_method = HiddenInputField
 [project]
 title = School project
 
+[physics]
+gravity_y = 0.0
+
