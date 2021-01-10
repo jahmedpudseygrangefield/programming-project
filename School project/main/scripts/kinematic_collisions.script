@@ -1,0 +1,37 @@
+--I do not take any credit for this script, this is pulled from the defold kinematic manual
+--However - minor custom change added - message posted to stop movement when contact is made
+function init(self)
+	-- correction vector
+	self.correction = vmath.vector3()
+end
+
+function update(self, dt)
+	-- reset correction
+	self.correction = vmath.vector3()
+end
+
+function on_message(self, message_id, message, sender)
+	-- Handle collision
+	if message_id == hash("contact_point_response") then
+		-- Get the info needed to move out of collision. We might
+		-- get several contact points back and have to calculate
+		-- how to move out of all of them by accumulating a
+		-- correction vector for this frame:
+		if message.distance > 0 then
+			-- First, project the accumulated correction onto
+			-- the penetration vector
+			local proj = vmath.project(self.correction, message.normal * message.distance)
+			if proj < 1 then
+				-- Only care for projections that does not overshoot.
+				local comp = (message.distance - message.distance * proj) * message.normal
+				-- Apply compensation
+				go.set_position(go.get_position() + comp)
+				-- Accumulate correction done
+				self.correction = self.correction + comp
+
+				--WIP
+				msg.post("playermodel#movement","collision_stop_walking")
+			end
+		end
+	end
+end
