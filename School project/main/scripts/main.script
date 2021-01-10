@@ -9,7 +9,8 @@ function final(self)
 end
 
 --this loads the main menu into main memory, and stuff can be taken in and out of main memory 
---the currentlevel script is based off the a system implemented in the spotter tutorial, but its being redesigned to fit my needs
+--[[the currentlevel script is based off the a system implemented in the spotter tutorial, 
+but its being redesigned to fit my needs and after a while it will be unrecognisable compared to original--]]
 function on_message(self, message_id, message, sender)
 	if message_id == hash("proxy_loaded") then
 		msg.post(sender, "enable")
