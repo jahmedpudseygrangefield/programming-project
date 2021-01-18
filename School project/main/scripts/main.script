@@ -8,10 +8,14 @@ function final(self)
 	msg.post(".","release_input_focus") --this does inverse of acquire focus
 end
 
---this loads the main menu into main memory, and stuff can be taken in and out of main memory 
+
 --[[the currentlevel script is based off the a system implemented in the spotter tutorial, 
 but its being redesigned to fit my needs and after a while it will be unrecognisable compared to original--]]
+
+--LOADER FUNCTION (GONNA BE LONG)
 function on_message(self, message_id, message, sender)
+--=====================================================================================
+	--MENU LOADER
 	if message_id == hash("proxy_loaded") then
 		msg.post(sender, "enable")
 
@@ -23,5 +27,10 @@ function on_message(self, message_id, message, sender)
 	--code that shutsdown the game when pressed
 	elseif message_id == hash("shutdown") then
 		msg.post(os.exit())
+		
+--==========================================================================================================
+	--LEVEL 0 LOADING SCRIPT
+	elseif message_id == hash("TEST") then
+		msg.post(os.exit()) 
 	end
 end
