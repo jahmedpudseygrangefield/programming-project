@@ -30,7 +30,7 @@ function on_message(self, message_id, message, sender)
 		
 --==========================================================================================================
 	--LEVEL 0 LOADING SCRIPT
-	elseif message_id == hash("TEST") then
+	elseif message_id == hash("BREAKDANCE") then
 		msg.post(os.exit()) 
 	end
 end

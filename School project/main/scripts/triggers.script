@@ -1,0 +1,14 @@
+function init(self)
+	self.correction = vmath.vector3()
+end
+
+function update(self, dt)
+	self.correction = vmath.vector3()
+end
+
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") then --hopefuly
+		msg.post("main:/controller", "BREAKDANCE")
+	end
+end
