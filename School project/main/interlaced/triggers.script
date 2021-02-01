@@ -1,0 +1,17 @@
+--this script can be applied to ever level making it interlaced
+
+--[[ Rough plan:
+1) every time a player walks over a trigger 
+2) a unique correspndong trigger message is sent 
+3) depending on the trigger message a gui overlay is loaded 
+4) the gui overlay is either a level or dialogue response 
+5) choice depends from there
+--]]
+	
+
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") then --detects collisions 
+		msg.post("main:/controller", "level0_level_choice") --sends a test message 
+	end
+end

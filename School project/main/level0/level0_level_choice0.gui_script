@@ -1,0 +1,13 @@
+--[[
+This should collect the trigger messa\ge from trigger script
+When the message is collected, it should display the gui 
+
+the idea is for the gui to be invisible, and then appear when the trigger happens
+	movement should be stopped
+	and the player responds and the menu dissapears again
+]]--
+function init(self)
+	local node = gui.get_node("parent_0")
+	gui.set_enabled(node, false)
+end
+

@@ -521,3 +521,38 @@ embedded_instances {
     z: 1.0
   }
 }
+embedded_instances {
+  id: "level_choice"
+  data: "components {\n"
+  "  id: \"level0_level_choice_0\"\n"
+  "  component: \"/main/level0/level0_level_choice_0.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 1370.0
+    y: -971.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}

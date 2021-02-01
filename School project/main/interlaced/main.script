@@ -1,3 +1,6 @@
+--this script can be applied to ever level making it interlaced
+--OVERALL THIS HANDLES LOADING LEVELS
+
 function init(self) 
 	msg.post(".", "acquire_input_focus") --allows for inputs (gonna be necessary for the menu system
 	msg.post("#menu_proxy", "load") --loads the menu system when the thing is booted
@@ -27,10 +30,12 @@ function on_message(self, message_id, message, sender)
 	--code that shutsdown the game when pressed
 	elseif message_id == hash("shutdown") then
 		msg.post(os.exit())
-		
+
 --==========================================================================================================
-	--LEVEL 0 LOADING SCRIPT
-	elseif message_id == hash("BREAKDANCE") then
-		msg.post(os.exit()) 
+
+--LEVEL 0 LOADING SCRIPT
+--will come back to this later 
+--	elseif message_id == hash("BREAKDANCE") then
+--		msg.post(os.exit()) 
 	end
 end
