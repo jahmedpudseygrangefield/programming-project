@@ -15,9 +15,10 @@ end
 --[[the currentlevel script is based off the a system implemented in the spotter tutorial, 
 but its being redesigned to fit my needs and after a while it will be unrecognisable compared to original--]]
 
+
+--=====================================================================================
 --LOADER FUNCTION (GONNA BE LONG)
 function on_message(self, message_id, message, sender)
---=====================================================================================
 	--MENU LOADER
 	if message_id == hash("proxy_loaded") then
 		msg.post(sender, "enable")
@@ -32,8 +33,8 @@ function on_message(self, message_id, message, sender)
 		msg.post(os.exit())
 
 --==========================================================================================================
-
 --LEVEL 0 LOADING SCRIPT
+
 --will come back to this later 
 --	elseif message_id == hash("BREAKDANCE") then
 --		msg.post(os.exit()) 

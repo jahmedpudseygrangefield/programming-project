@@ -12,6 +12,6 @@
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("trigger_response") then --detects collisions 
-		msg.post("main:/controller", "level0_level_choice") --sends a test message 
+		msg.post("level0:/level_choice", "level0_level_choice") --sends a test message 
 	end
 end

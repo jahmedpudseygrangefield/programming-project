@@ -5,9 +5,20 @@ When the message is collected, it should display the gui
 the idea is for the gui to be invisible, and then appear when the trigger happens
 	movement should be stopped
 	and the player responds and the menu dissapears again
-]]--
+	]]--
+
+--gotta reverse this later on 
 function init(self)
 	local node = gui.get_node("parent_0")
 	gui.set_enabled(node, false)
 end
 
+--this function will take the message from the trigger 
+--then it should make the menu re-appear
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("level0_level_choice") then 
+		local node = gui.get_node("parent_0")
+		gui.set_enabled(node, true)
+	end
+end
