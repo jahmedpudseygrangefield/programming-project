@@ -36,7 +36,13 @@ function on_message(self, message_id, message, sender)
 --LEVEL 0 LOADING SCRIPT
 
 --will come back to this later 
+--[[
 	elseif message_id == hash("BREAKDANCE") then
 		msg.post(os.exit()) 
+		]]
+	elseif message_id == hash("load_level1A") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_proxy","load")
+		self.current_collection = "level1A_proxy"
 	end
 end

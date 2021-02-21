@@ -41,13 +41,24 @@ function on_input(self, action_id, action, message_id, message)
 		msg.post("#animation_group", "play_animation", { id=hash("idle") })
 		self.current_animation_group = "idle"
 
-
-		--WIP
+--===========================================================================================
+		--COLLISIONS 
 		--if the player collides with a wall, they should stop walking
 	elseif message_id == hash("collision_stop_walking") then 
-		self.speed.x = 0 --this may reduce speed to 0 stopping the player
+		self.speed.x = 0 
 		msg.post("#animation_group", "play_animation", { id=hash("idle") })
 		self.current_animation_group = "idle"
+
+		--TRIGGERS 
+		--[[when the player gets to the dialogue sections, in order to stop them, the trigger 
+		will kill their speed therefore stopping them without any fancy code needed ]]
+--[[
+	elseif message_id == hash("level0_level_choice") then  
+		self.speed.x = 0
+		msg.post("#animation_group", "play_animation", { id=hash("idle") })
+		self.current_animation_group = "idle"
+		]]
 		
 	end
 end
+

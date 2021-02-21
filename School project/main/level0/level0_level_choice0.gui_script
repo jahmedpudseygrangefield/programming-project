@@ -35,10 +35,10 @@ end
 
 --=============================================================================--
 --actual GUI choice system
+--WIP
 function on_input(self, action_id, action)
 	if action.pressed and gui.pick_node(gui.get_node("0A"), action.x, action.y) then 
-		msg.post("main:/controller", "BREAKDANCE")
-			--brakdance is standard test message, and this should shut down the game
+		msg.post("main:/controller", "load_level1A")
 		local node = gui.get_node("parent_0")
 		gui.set_enabled(node, false) 
 	end
