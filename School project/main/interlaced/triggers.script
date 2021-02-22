@@ -8,10 +8,13 @@
 5) choice depends from there
 --]]
 	
+--this function sends a message to the movement section to kill speed, any time a trigger is detected 
+--just stops the player, diverts focus to the option, just a minor thing to improve gameplay 
 
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("trigger_response") then --detects collisions with the trigger 
-		msg.post("level0:/level_choice", "level0_level_choice") --sends a test message 
+		msg.post("level0:/level_choice", "level0_level_choice") 
 	end
 end
+

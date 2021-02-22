@@ -7,9 +7,7 @@ the idea is for the gui to be invisible, and then appear when the trigger happen
 	and the player responds and the menu dissapears again
 	]]--
 
-function final(self)
-	msg.post(".","release_input_focus") 
-end
+
 
 --=============================================================--
 	--system that makes the menu appear and dissapear

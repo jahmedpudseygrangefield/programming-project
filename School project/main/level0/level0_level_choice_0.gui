@@ -160,8 +160,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Carry on\n"
-  ""
+  text: "Mountain Path"
   font: "system_font"
   id: "0A"
   xanchor: XANCHOR_NONE
@@ -224,7 +223,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Mountain path"
+  text: "Carry on"
   font: "system_font"
   id: "0B"
   xanchor: XANCHOR_NONE
