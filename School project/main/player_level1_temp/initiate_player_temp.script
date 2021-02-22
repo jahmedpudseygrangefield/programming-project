@@ -1,0 +1,3 @@
+function init(self)
+	collectionfactory.create("#player_level1_temp")
+end
