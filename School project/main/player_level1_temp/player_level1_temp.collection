@@ -116,7 +116,7 @@ embedded_instances {
   "  }\n"
   "}\n"
   "embedded_components {\n"
-  "  id: \"sprite\"\n"
+  "  id: \"mountain bg\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
   "default_animation: \\\"parallax-mountain-bg\\\"\\n"
