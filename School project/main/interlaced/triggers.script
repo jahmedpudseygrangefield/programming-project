@@ -15,6 +15,7 @@
 function on_message(self, message_id, message, sender)
 	if message_id == hash("trigger_response") then --detects collisions with the trigger 
 		msg.post("level0:/level_choice", "level0_level_choice") 
+		msg.post("level0:/dialogue_choice", "level0_dialogue_choice")
 	end
 end
 

@@ -1,4 +1,4 @@
-script: "/main/level0/level0_level_choice0.gui_script"
+script: "/main/level0/level_choices/level0_level_choice0.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "parent_0"
+  id: "level_choice0_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -117,7 +117,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "parent_0"
+  parent: "level_choice0_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -180,7 +180,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "parent_0"
+  parent: "level_choice0_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -243,7 +243,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "parent_0"
+  parent: "level_choice0_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0

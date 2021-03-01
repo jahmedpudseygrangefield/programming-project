@@ -7,12 +7,10 @@ function init(self)
 	self.player_running_speed = 200
 	self.speed = vmath.vector3()
 end
-
 function update(self, dt)
 	-- reset correction
 	self.correction = vmath.vector3()
 end
-
 function on_message(self, message_id, message, sender)
 	-- Handle collision
 	if message_id == hash("contact_point_response") then
@@ -31,10 +29,6 @@ function on_message(self, message_id, message, sender)
 				go.set_position(go.get_position() + comp)
 				-- Accumulate correction done
 				self.correction = self.correction + comp
-				
-				--need to post a message from here to the movement section 
-				msg.post("#movement", "BREAKDANCE")
-				
 			end
 		end
 	end

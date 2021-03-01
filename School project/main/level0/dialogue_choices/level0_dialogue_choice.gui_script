@@ -1,0 +1,14 @@
+--disables the dialogue choice gui straight away 
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	local node = gui.get_node("dialogue_choice0_parent")
+	gui.set_enabled(node, false)
+end
+
+--when the trigger is activated the GUI appears
+function on_message(self, message_id, message, sender)
+	if message_id == hash("level0_dialogue_choice") then 
+		local node = gui.get_node("dialogue_choice0_parent")
+		gui.set_enabled(node, true)
+	end
+end
