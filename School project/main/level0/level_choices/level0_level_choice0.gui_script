@@ -13,18 +13,19 @@ the idea is for the gui to be invisible, and then appear when the trigger happen
 
 --gotta reverse this later on 
 function init(self)
-	msg.post(".", "acquire_input_focus")
+	msg.post(".", "release_input_focus") --1) initially restricts input from the mouse 
 	local node = gui.get_node("level_choice0_parent")
-	gui.set_enabled(node, false)
+	gui.set_enabled(node, disabled)
 end
 
 --this function will take the message from the trigger 
 --then it should make the menu re-appear
 
 function on_message(self, message_id, message, sender)
-	if message_id == hash("level0_level_choice") then 		
+	if message_id == hash("level0_level_choice") then
 		local node = gui.get_node("level_choice0_parent")
 		gui.set_enabled(node, true)
+		msg.post(".", "acquire_input_focus") --2) then allows input from the mouse when gui appears
 	end
 end
 
@@ -37,5 +38,6 @@ function on_input(self, action_id, action)
 		msg.post("main:/controller", "load_level1A")
 		local node = gui.get_node("level_choice0_parent")
 		gui.set_enabled(node, false) 
+		msg.post(".", "release_input_focus") -- 3) then restricts mouse input when the GUI dissapears
 	end
 end

@@ -14,8 +14,12 @@
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("trigger_response") then --detects collisions with the trigger 
-		msg.post("level0:/level_choice", "level0_level_choice") 
-		msg.post("level0:/dialogue_choice", "level0_dialogue_choice")
+		--general plan will be to send a detection, and then signature which confirms it 
+		
+		msg.post("level0:/level_choice", "level0_level_choice") --sends a message to the location
+		
+		--msg.post("level0:/dialogue_choice", "level0_dialogue_choice") --message 
+		--msg.post("level0:/dialogue_choice", "level0_dialogue_choice_signature_1") --signature  
 	end
 end
 
