@@ -11,7 +11,8 @@
 --this function sends a message to the movement section to kill speed, any time a trigger is detected 
 --just stops the player, diverts focus to the option, just a minor thing to improve gameplay 
 
-
+--IMPORTANT - I will come back to this later if the current solution does not work, however this has mostly failed so far.
+--[[
 function on_message(self, message_id, message, sender)
 	if message_id == hash("trigger_response") then --detects collisions with the trigger 
 		--general plan will be to send a detection, and then signature which confirms it 
@@ -22,4 +23,20 @@ function on_message(self, message_id, message, sender)
 		--msg.post("level0:/dialogue_choice", "level0_dialogue_choice_signature_1") --signature  
 	end
 end
+--]]
 
+--Quick test script using 1 dialogue and 1 level trigger 
+function on_message(self, message_id, message, sender, enter)
+	--could do an 'and' connection or elaborate with 'then'
+	if message_id == hash("trigger_response") --[[and message.group == hash("dialogue_trigger")]] then 
+		msg.post("level0:/dialogue_choice", "level0_dialogue_choice")
+
+
+
+	elseif message_id == hash("trigger_response") then 
+		if message.group == hash("level_trigger") then 
+			msg.post("level0:/level_choice", "level0_level_choice") 
+		end
+	end
+end
+--]]

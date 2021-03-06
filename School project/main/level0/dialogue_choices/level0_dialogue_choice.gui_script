@@ -7,7 +7,7 @@ end
 
 --when the trigger is activated the GUI appears
 function on_message(self, message_id, message, sender)
-	if message_id == hash("level0_dialogue_choice") and message.other_id == hash("level0_dialogue_choice_signature_1") then 
+	if message_id == hash("level0_dialogue_choice") then 
 		local node = gui.get_node("dialogue_choice0_parent") 
 		gui.set_enabled(node, true)
 		msg.post(".", "acquire_input_focus") --2) then allows input from the mouse when gui is appears
