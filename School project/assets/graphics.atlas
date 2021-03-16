@@ -1,4 +1,8 @@
 images {
+  image: "/assets/graphics/background/background upscaled.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
   image: "/assets/graphics/background/bgcolour - blue.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
@@ -28,6 +32,10 @@ images {
 }
 images {
   image: "/assets/graphics/background/graveyard.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/graphics/background/Level1a.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
@@ -155,7 +163,7 @@ images {
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {
-  image: "/assets/graphics/player/idle/idl1.png"
+  image: "/assets/graphics/player/idle/idle1.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
 images {

@@ -1,11 +1,10 @@
 [bootstrap]
-main_collection = /main/main.collectionc
+main_collection = /main/interlaced/main.collectionc
 
 [script]
 shared_state = 1
 
 [display]
-width = 960
 height = 640
 
 [android]
@@ -13,4 +12,7 @@ input_method = HiddenInputField
 
 [project]
 title = School project
+
+[physics]
+gravity_y = 0.0
 

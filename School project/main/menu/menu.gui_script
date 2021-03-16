@@ -1,0 +1,21 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+end
+
+function final(self)
+	msg.post(".","release_input_focus") --this does inverse of acquire focus
+end
+
+--this should load the first level when the begin node is selected
+function on_input(self, action_id, action)
+	if action.pressed and gui.pick_node(gui.get_node("start"), action.x, action.y) then 
+		msg.post("main:/controller", "level0") --when this is read this will be sent to main menu and loaded
+		msg.post("main:/controller", "cam_activate") --this is sent out universially to be picked up by the camera function
+
+
+		--quit function
+	elseif action.pressed and gui.pick_node(gui.get_node("quit"), action.x, action.y) then
+		msg.post("main:/controller", "shutdown")
+	
+	end
+end

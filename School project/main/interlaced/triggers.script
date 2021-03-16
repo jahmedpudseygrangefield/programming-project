@@ -1,0 +1,23 @@
+--this script can be applied to ever level making it interlaced
+
+--[[ Rough plan:
+1) every time a player walks over a trigger 
+2) a unique correspndong trigger message is sent 
+3) depending on the trigger message a gui overlay is loaded 
+4) the gui overlay is either a level or dialogue response 
+5) choice depends from there
+--]]
+
+
+
+-- new updated script now fully working 
+--will go on to elaborate on this script 
+function on_message(self, message_id, message, sender, enter)
+	--could do an 'and' connection or elaborate with 'then'
+	if message_id == hash("trigger_response") and message.group == hash("dialogue_trigger0") then --checks if the group associated with the trigger works too
+		msg.post("level0:/dialogue_choice", "level0_dialogue_choice")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_choice0") then --checks if the group associated with the trigger works too
+		msg.post("level0:/level_choice", "level0_level_choice")
+	end
+end
