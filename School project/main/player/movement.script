@@ -5,7 +5,7 @@
 --this code happens on initialisation, allows main script
 function init(self)
 	msg.post(".","acquire_input_focus") --allows for letter input for movement	
-	self.player_running_speed = 500 --sets running speed (keep changing to find right speed)
+	self.player_running_speed = 750 --sets running speed (keep changing to find right speed)
 	self.speed = vmath.vector3()
 end
 

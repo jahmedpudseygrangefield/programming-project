@@ -15,9 +15,17 @@
 function on_message(self, message_id, message, sender, enter)
 	--could do an 'and' connection or elaborate with 'then'
 	if message_id == hash("trigger_response") and message.group == hash("dialogue_trigger0") then --checks if the group associated with the trigger works too
-		msg.post("level0:/dialogue_choice", "level0_dialogue_choice")
+		msg.post("level0:/dialogue_choice_0", "level0_dialogue_choice")
 
 	elseif message_id == hash("trigger_response") and message.group == hash("level_choice0") then --checks if the group associated with the trigger works too
 		msg.post("level0:/level_choice", "level0_level_choice")
+
+--[[
+		--gonna retry to the signing system with multiple gui's 
+		--checks the trigger activation, the group of the 
+		
+	elseif message_id == hash("dialogue_slim_signature") and message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1") then
+		print("this is finally working")
+		]]
 	end
 end

@@ -20,7 +20,6 @@ end
 
 --this function will take the message from the trigger 
 --then it should make the menu re-appear
-
 function on_message(self, message_id, message, sender)
 	if message_id == hash("level0_level_choice") then
 		local node = gui.get_node("level_choice0_parent")

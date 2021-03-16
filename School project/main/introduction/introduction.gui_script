@@ -1,0 +1,13 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+end
+
+--when continue is pressed, it is passed to the main script and then level0 is loaded 
+function on_input(self, action_id, action)
+	if action.pressed and gui.pick_node(gui.get_node("Continue"), action.x, action.y) then
+		msg.post("main:/controller", "level0")
+	end
+end
+function final(self)
+	msg.post(".","release_input_focus") 
+end

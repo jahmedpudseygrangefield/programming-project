@@ -23,6 +23,12 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("proxy_loaded") then
 		msg.post(sender, "enable")
 
+	elseif message_id == hash("introduction") then --boots up introduction after begin is selected
+		msg.post(self.current_collection, "unload")
+		msg.post("#introduction_proxy", "load")
+		self.current_collection = "#introduction_proxy"
+		
+
 	elseif message_id == hash("level0") then
 		msg.post(self.current_collection, "unload") --unlodas the main menu when the button is pressed
 		msg.post("#level0_proxy", "load") --loads the main menu
