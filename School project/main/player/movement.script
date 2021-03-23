@@ -45,29 +45,23 @@ end
 
 
 --===========================================================================================
+--[[
 		--COLLISIONS 
 		--if the player collides with a wall, they should stop walking
 
-
-		--TRIGGERS 
-		--[[when the player gets to the dialogue sections, in order to stop them, the trigger 
-		will kill their speed therefore stopping them without any fancy code needed ]]
---[[
-	elseif message_id == hash("level0_level_choice") then  
-		self.speed.x = 0
-		msg.post("#animation_group", "play_animation", { id=hash("idle") })
-		self.current_animation_group = "idle"
-		]]
 		
-function on_message(self, message_id, message, sender)
-	if message_id == hash("BREAKDANCE") then 
-		self.speed.x = 0
-		msg.post("#animation_group", "play_animation", { id=hash("idle") })
-		self.current_animation_group = "idle"
+		--TRIGGERS 
+		when the player gets to the dialogue sections, in order to stop them, the trigger 
+		will kill their speed therefore stopping them without any fancy code needed 
+]]
 
-	elseif message_id == hash("trigger_response") then 
+function on_message(self, message_id, message, sender)
+	if message_id == hash("trigger_response") then 
 		self.speed.x = 0
 		msg.post("#animation_group", "play_animation", { id=hash("idle") })
 		self.current_animation_group = "idle"
 	end
-end		
+end	
+
+
+	
