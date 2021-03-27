@@ -1,5 +1,10 @@
---this script can be applied to ever level making it interlaced
---OVERALL THIS HANDLES LOADING LEVELS
+--[[
+this script can be applied to ever level making it interlaced
+OVERALL THIS HANDLES LOADING LEVELS
+
+the currentlevel script is based off the a system implemented in the spotter tutorial, 
+but its being redesigned to fit my needs and after a while it will be unrecognisable compared to original
+]]
 
 function init(self) 
 	msg.post(".", "acquire_input_focus") --allows for inputs (gonna be necessary for the menu system
@@ -11,9 +16,6 @@ function final(self)
 	msg.post(".","release_input_focus") --this does inverse of acquire focus
 end
 
-
---[[the currentlevel script is based off the a system implemented in the spotter tutorial, 
-but its being redesigned to fit my needs and after a while it will be unrecognisable compared to original--]]
 
 
 --=====================================================================================
@@ -39,14 +41,8 @@ function on_message(self, message_id, message, sender)
 		msg.post(os.exit())
 
 --==========================================================================================================
---LEVEL 0 LOADING SCRIPT
+--LEVEL 0 - CHOICES LOADING SCRIPT
 
---will come back to this later 
---[[
-	elseif message_id == hash("BREAKDANCE") then
-		msg.post(os.exit()) 
-		]]
-		
 	elseif message_id == hash("load_level1A") then 
 		msg.post(self.current_collection, "unload")
 		msg.post("#level1A_proxy","load")

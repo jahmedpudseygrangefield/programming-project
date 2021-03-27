@@ -2,14 +2,13 @@
 This should collect the trigger messa\ge from trigger script
 When the message is collected, it should display the gui 
 
-the idea is for the gui to be invisible, and then appear when the trigger happens
-	movement should be stopped
-	and the player responds and the menu dissapears again
-	]]--
+the idea is for the gui to be invisible, and then appear when the trigger happens movement should be stopped 
+and the player responds and the menu dissapears again
+]]
 
 
 --=============================================================--
-	--system that makes the menu appear and dissapear
+--system that makes the menu appear and dissapear
 
 --gotta reverse this later on 
 function init(self)
