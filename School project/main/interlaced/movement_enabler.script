@@ -1,5 +1,0 @@
-function on_message(self, message, message_id, sender)
-	if message_id == hash("BREAKDANCE") then 
-		os.exit()
-	end
-end

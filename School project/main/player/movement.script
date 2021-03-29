@@ -45,10 +45,7 @@ end
 
 
 --===========================================================================================
-
 --COLLISIONS + TRIGGERS - ANIMATION FIXES
-
-
 function on_message(self, message_id, message, sender)
 	--Collision animation stop
 	--if the player collides with a wall, they should stop walking
@@ -58,22 +55,10 @@ function on_message(self, message_id, message, sender)
 		self.current_animation_group = "idle"
 
 		--Trigger animation stop  
-		--WIP 
+		--movement is completely killed here 
 	elseif message_id == hash("trigger_response") then 
 		self.speed.x = 0
 		msg.post("#animation_group", "play_animation", { id=hash("idle") })
 		self.current_animation_group = "idle"
-		msg.post(".", "release_input_focus")
-
 	end
 end
-
---[[
---listens out for the command to enable movement again
-function on_message(self, message_id, message, sender)
-	if message_id == hash("BREAKDANCE") then 
-		msg.post(".", "acquire_input_focus") 
-	end
-end
-]]
-
