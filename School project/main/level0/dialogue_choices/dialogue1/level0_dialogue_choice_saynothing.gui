@@ -1,4 +1,4 @@
-script: "/main/level0/dialogue_choices/level0_dialogue_choice_saynothing.gui_script"
+script: "/main/level0/dialogue_choices/dialogue1/level0_dialogue_choice_saynothing.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 483.0
-    y: 544.0
+    x: 450.0
+    y: 574.0
     z: 0.0
     w: 1.0
   }
@@ -128,8 +128,8 @@ nodes {
 }
 nodes {
   position {
-    x: 279.0
-    y: 325.0
+    x: 203.0
+    y: 276.0
     z: 0.0
     w: 1.0
   }
@@ -159,9 +159,11 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "<text>"
+  text: "[option 1]\n"
+  "[continue to say nothing \n"
+  "and stay quiet]"
   font: "system_font"
-  id: "text"
+  id: "stayquiet"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -191,8 +193,8 @@ nodes {
 }
 nodes {
   position {
-    x: 657.0
-    y: 323.0
+    x: 703.0
+    y: 276.0
     z: 0.0
     w: 1.0
   }
@@ -209,7 +211,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 200.0
+    x: 275.0
     y: 100.0
     z: 0.0
     w: 1.0
@@ -222,9 +224,11 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "<text>"
+  text: "[option 2]\n"
+  "Perhaps I am talkative, and\n"
+  "maybe I don\'t want to talk to you?"
   font: "system_font"
-  id: "text1"
+  id: "perhaps"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
