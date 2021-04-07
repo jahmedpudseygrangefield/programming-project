@@ -10,10 +10,6 @@ function init(self)
 	msg.post(".", "release_input_focus") --1) initially restricts input from the mouse 
 	local node0 = gui.get_node("dialogue_choice0_parent")
 	gui.set_enabled(node0, false)
-
-	--Disables the triggers, will be enabled when necessary 
-	msg.post("/trigger#dialogue_trigger_nothing", "disable")
-	msg.post("/trigger#dialogue_trigger_slim", "disable")
 end
 
 --when the trigger is activated the GUI appears

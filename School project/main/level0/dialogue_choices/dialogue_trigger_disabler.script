@@ -1,0 +1,11 @@
+function init(self)
+
+	--Disables the triggers, will be enabled when necessary 
+	msg.post("/trigger#dialogue_trigger_nothing", "disable")
+	msg.post("/trigger#dialogue_trigger_slim", "disable")
+	msg.post("/trigger#dialogue_trigger_perhaps", "disable")
+	msg.post("/trigger#dialogue_trigger_stayquiet", "disable")
+	msg.post("/trigger#dialogue_trigger_yourname", "disable")
+	msg.post("/trigger#dialogue_trigger_youtoo", "disable")
+end
+

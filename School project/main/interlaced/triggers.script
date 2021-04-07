@@ -18,9 +18,25 @@ function on_message(self, message_id, message, sender, enter, other_id)
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_slim") then
 		msg.post("level0:/dialogue_response_slim", "dialogue_choice_slim")
 		
-		--dialogue say nothing response 
+		--dialogue saynothing response 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_nothing") then
 		msg.post("level0:/dialogue_response_nothing", "dialogue_choice_nothing")
+
+		--dialogue stayquiet response 
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_stayquiet") then
+		msg.post("level0:/dialogue_response_stayquiet", "dialogue_response_stayquiet")
+
+		--dialogue perhaps response 
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_perhaps") then
+		msg.post("level0:/dialogue_response_stayquiet", "dialogue_response_stayquiet")
+
+		--dialogue yourname response 
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_yourname") then
+		msg.post("level0:/dialogue_response_yourname", "dialogue_response_yourname")
+
+		--dialogue youtoo response
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_youtoo") then
+		msg.post("level0:/dialogue_response_youtoo", "dialogue_response_youtoo")
 
 
 		--level0 level pairings 

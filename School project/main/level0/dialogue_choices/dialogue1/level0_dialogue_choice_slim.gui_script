@@ -3,10 +3,6 @@ function init(self)
 	--disables the GUI on init 
 	local node_slim = gui.get_node("slim_response_parent")
 	gui.set_enabled(node_slim, false) 
-
-	--Space for future trigger disabling:
-
-	
 end
 
 function on_message(self, message_id, message, sender, enter, other_id)

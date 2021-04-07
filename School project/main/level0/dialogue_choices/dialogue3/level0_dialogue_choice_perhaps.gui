@@ -1,4 +1,4 @@
-script: ""
+script: "/main/level0/dialogue_choices/dialogue3/level0_dialogue_choice_perhaps.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "box"
+  id: "perhaps_response_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -116,7 +116,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "box"
+  parent: "perhaps_response_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -181,7 +181,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "box"
+  parent: "perhaps_response_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -246,7 +246,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "box"
+  parent: "perhaps_response_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
