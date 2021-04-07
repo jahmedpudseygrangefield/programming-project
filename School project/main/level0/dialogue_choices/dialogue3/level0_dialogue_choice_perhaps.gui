@@ -163,7 +163,7 @@ nodes {
   "Maybe, because you\'re \n"
   "a random voice on the radio?"
   font: "system_font"
-  id: "text1"
+  id: "random"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -224,11 +224,12 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Because I\'m tired, ok. \n"
+  text: "[option 2]\n"
+  "Because I\'m tired, ok. \n"
   "I\'ve been hiking through\n"
   "this forest all day..."
   font: "system_font"
-  id: "text2"
+  id: "tired"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER

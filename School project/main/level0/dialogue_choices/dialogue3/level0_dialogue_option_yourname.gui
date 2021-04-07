@@ -224,7 +224,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "[option 1[\n"
+  text: "[option 1]\n"
   "What kind of name is \'Fritz\',\n"
   "Is it a nickname?"
   font: "system_font"
