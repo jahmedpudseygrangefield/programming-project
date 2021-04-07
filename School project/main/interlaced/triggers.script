@@ -28,7 +28,7 @@ function on_message(self, message_id, message, sender, enter, other_id)
 
 		--dialogue perhaps response 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_perhaps") then
-		msg.post("level0:/dialogue_response_stayquiet", "dialogue_response_stayquiet")
+		msg.post("level0:/dialogue_response_perhaps", "dialogue_response_perhaps")
 
 		--dialogue yourname response 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_yourname") then

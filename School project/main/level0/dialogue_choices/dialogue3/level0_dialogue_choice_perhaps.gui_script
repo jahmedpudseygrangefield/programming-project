@@ -3,3 +3,15 @@ function init(self)
 	local node_perhaps = gui.get_node("perhaps_response_parent")
 	gui.set_enabled(node_perhaps, false)
 end
+
+--when the trigger is activated the GUI appears
+function on_message(self, message_id, message, sender)
+	if message_id == hash("dialogue_response_perhaps") then
+		local node_perhaps = gui.get_node("perhaps_response_parent") 
+		gui.set_enabled(node_perhaps, true)
+		msg.post(".", "acquire_input_focus") --2) then allows input from the mouse when gui is appears
+
+		--this should completely disable the related trigger stopping the double glitch
+		msg.post("/trigger#dialogue_trigger_perhaps", "disable")
+	end
+end

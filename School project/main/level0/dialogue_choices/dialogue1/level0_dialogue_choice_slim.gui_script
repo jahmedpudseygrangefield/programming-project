@@ -28,7 +28,7 @@ function on_input(self, action_id, action)
 
 		--Disables collision & enables trigger for next apropriate response 
 		msg.post("/collision#dialogue1_collision", "disable")
-		--msg.post("", "") (NEXT GUI TRIGGER/WIP)
+		msg.post("/trigger#dialogue_trigger_yourname", "enable")
 
 --youtoo dialogue response option 
 	elseif action.pressed and gui.pick_node(gui.get_node("youtoo"), action.x, action.y) then
@@ -39,6 +39,6 @@ function on_input(self, action_id, action)
 
 		--Disables collision & enables trigger for next apropriate response 
 		msg.post("/collision#dialogue1_collision", "disable")
-		--msg.post("", "") (NEXT GUI TRIGGER/WIP)
+		msg.post("/trigger#dialogue_trigger_youtoo", "enable") 
 	end
 end

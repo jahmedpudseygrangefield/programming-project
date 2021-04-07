@@ -96,7 +96,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "\"And why would you want to talk to me?\""
+  text: "\"And why would you  not want to talk to me?\""
   font: "system_font"
   id: "text"
   xanchor: XANCHOR_NONE

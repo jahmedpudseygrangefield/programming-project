@@ -3,3 +3,15 @@ function init(self)
 	local node_stayquiet = gui.get_node("stayquiet_response_parent")
 	gui.set_enabled(node_stayquiet, false)
 end
+
+--when the trigger is activated the GUI appears
+function on_message(self, message_id, message, sender)
+	if message_id == hash("dialogue_response_stayquiet") then
+		local node_stayquiet = gui.get_node("stayquiet_response_parent") 
+		gui.set_enabled(node_stayquiet, true)
+		msg.post(".", "acquire_input_focus")
+
+		--this should completely disable the related trigger stopping the double glitch
+		msg.post("/trigger#dialogue_trigger_stayquiet", "disable")
+	end
+end
