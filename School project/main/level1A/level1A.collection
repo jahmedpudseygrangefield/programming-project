@@ -461,3 +461,178 @@ embedded_instances {
     z: 1.0
   }
 }
+embedded_instances {
+  id: "dialogue_response_fritz"
+  data: "components {\n"
+  "  id: \"level1A_dialgoue_choice_fritz\"\n"
+  "  component: \"/main/level1A/dialogue_choices/dialogue_0/level1A_dialgoue_choice_fritz.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -984.0
+    y: -709.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "dialogue_response_littletired&becausetired"
+  data: "components {\n"
+  "  id: \"level1A_dialgoue_choice_littletired&becausetired\"\n"
+  "  component: \"/main/level1A/dialogue_choices/dialogue_0/level1A_dialgoue_choice_littletired&becausetired.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -964.0
+    y: -2459.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "dialogue_response_might&fine"
+  data: "components {\n"
+  "  id: \"level1A_dialgoue_choice_might&fine\"\n"
+  "  component: \"/main/level1A/dialogue_choices/dialogue_0/level1A_dialgoue_choice_might&fine.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -967.0
+    y: -3446.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "dialogue_response_uncomfortable&voiceradio"
+  data: "components {\n"
+  "  id: \"level1A_dialgoue_choice_uncomfortable&voiceradio\"\n"
+  "  component: \"/main/level1A/dialogue_choices/dialogue_0/level1A_dialgoue_choice_uncomfortable&voiceradio.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -976.0
+    y: -4396.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "dialogue_response_nicetomeetyou"
+  data: "components {\n"
+  "  id: \"level1A_dialogue_choice_nicetomeetyou\"\n"
+  "  component: \"/main/level1A/dialogue_choices/dialogue_0/level1A_dialogue_choice_nicetomeetyou.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -984.0
+    y: -1575.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
