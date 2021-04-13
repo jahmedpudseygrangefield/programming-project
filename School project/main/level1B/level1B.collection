@@ -164,7 +164,7 @@ embedded_instances {
   id: "player"
   data: "components {\n"
   "  id: \"initiate_player_temp\"\n"
-  "  component: \"/main/player/player_level1_temp/initiate_player_temp.script\"\n"
+  "  component: \"/main/player_level1_temp/initiate_player_temp.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
