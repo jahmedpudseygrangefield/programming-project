@@ -1,4 +1,4 @@
-script: "/main/level0/dialogue_choices/dialogue3/level0_dialogue_choice_youtoo.gui_script"
+script: "/main/level0/dialogue_choices/dialogue2/level0_dialogue_choice_perhaps.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -11,8 +11,8 @@ background_color {
 }
 nodes {
   position {
-    x: 19.0
-    y: -106.0
+    x: 100.0
+    y: -158.0
     z: 0.0
     w: 1.0
   }
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "youtoo_response_parent"
+  id: "perhaps_response_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 481.0
-    y: 560.0
+    x: 383.0
+    y: 607.0
     z: 0.0
     w: 1.0
   }
@@ -96,7 +96,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "\"Whats up with you?\""
+  text: "\"And why would you  not want to talk to me?\""
   font: "system_font"
   id: "text"
   xanchor: XANCHOR_NONE
@@ -116,7 +116,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "youtoo_response_parent"
+  parent: "perhaps_response_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -128,8 +128,8 @@ nodes {
 }
 nodes {
   position {
-    x: 210.0
-    y: 257.0
+    x: 150.0
+    y: 307.0
     z: 0.0
     w: 1.0
   }
@@ -146,7 +146,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 340.0
+    x: 260.0
     y: 100.0
     z: 0.0
     w: 1.0
@@ -160,11 +160,10 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 1]\n"
-  "I dont know, I\'m just a little\n"
-  "uncomfortable giving my name to a stranger\n"
-  "on the radio"
+  "Maybe, because you\'re \n"
+  "a random voice on the radio?"
   font: "system_font"
-  id: "uncomfortable"
+  id: "random"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -182,7 +181,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "youtoo_response_parent"
+  parent: "perhaps_response_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -194,8 +193,8 @@ nodes {
 }
 nodes {
   position {
-    x: 753.0
-    y: 256.0
+    x: 599.0
+    y: 309.0
     z: 0.0
     w: 1.0
   }
@@ -212,7 +211,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 280.0
+    x: 200.0
     y: 100.0
     z: 0.0
     w: 1.0
@@ -226,7 +225,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 2]\n"
-  "I\'m just a little tired, thats all."
+  "Because I\'m tired, ok. \n"
+  "I\'ve been hiking through\n"
+  "this forest all day..."
   font: "system_font"
   id: "tired"
   xanchor: XANCHOR_NONE
@@ -246,7 +247,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "youtoo_response_parent"
+  parent: "perhaps_response_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0

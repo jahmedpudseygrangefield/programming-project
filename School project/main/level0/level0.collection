@@ -1106,41 +1106,6 @@ embedded_instances {
   }
 }
 embedded_instances {
-  id: "dialogue_choice_0"
-  data: "components {\n"
-  "  id: \"level0_dialogue_choice\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue0/level0_dialogue_choice.gui\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 1282.0
-    y: -729.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
   id: "audio"
   data: "components {\n"
   "  id: \"audio\"\n"
@@ -1272,7 +1237,7 @@ embedded_instances {
   id: "dialogue_response_stayquiet"
   data: "components {\n"
   "  id: \"level0_dialogue_choice_stayquiet\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue3/level0_dialogue_choice_stayquiet.gui\"\n"
+  "  component: \"/main/level0/dialogue_choices/dialogue2/level0_dialogue_choice_stayquiet.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1307,7 +1272,7 @@ embedded_instances {
   id: "dialogue_response_perhaps"
   data: "components {\n"
   "  id: \"level0_dialogue_choice_perhaps\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue3/level0_dialogue_choice_perhaps.gui\"\n"
+  "  component: \"/main/level0/dialogue_choices/dialogue2/level0_dialogue_choice_perhaps.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1342,7 +1307,7 @@ embedded_instances {
   id: "dialogue_response_yourname"
   data: "components {\n"
   "  id: \"level0_dialogue_option_yourname\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue3/level0_dialogue_option_yourname.gui\"\n"
+  "  component: \"/main/level0/dialogue_choices/dialogue2/level0_dialogue_option_yourname.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1377,7 +1342,7 @@ embedded_instances {
   id: "dialogue_response_youtoo"
   data: "components {\n"
   "  id: \"level0_dialogue_choice_youtoo\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue3/level0_dialogue_choice_youtoo.gui\"\n"
+  "  component: \"/main/level0/dialogue_choices/dialogue2/level0_dialogue_choice_youtoo.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1429,6 +1394,41 @@ embedded_instances {
   position {
     x: 0.0
     y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "dialogue_choice_0"
+  data: "components {\n"
+  "  id: \"level0_dialogue_choice\"\n"
+  "  component: \"/main/level0/dialogue_choices/dialogue0/level0_dialogue_choice.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 1282.0
+    y: -729.0
     z: 0.0
   }
   rotation {

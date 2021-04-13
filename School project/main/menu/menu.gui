@@ -1,4 +1,4 @@
-script: "/main/side_stuff/menu.gui_script"
+script: "/main/menu/menu.gui_script"
 fonts {
   name: "system_font"
   font: "/assets/fonts/menu.font"

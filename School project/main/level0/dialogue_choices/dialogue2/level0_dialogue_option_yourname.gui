@@ -1,4 +1,4 @@
-script: "/main/level0/dialogue_choices/dialogue3/level0_dialogue_choice_perhaps.gui_script"
+script: "/main/level0/dialogue_choices/dialogue2/level0_dialogue_option_yourname.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -11,8 +11,8 @@ background_color {
 }
 nodes {
   position {
-    x: 100.0
-    y: -158.0
+    x: 7.0
+    y: -92.0
     z: 0.0
     w: 1.0
   }
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "perhaps_response_parent"
+  id: "yourname_response_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 383.0
-    y: 607.0
+    x: 491.0
+    y: 543.0
     z: 0.0
     w: 1.0
   }
@@ -96,7 +96,8 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "\"And why would you  not want to talk to me?\""
+  text: "\"Well, my name is Fritz, \n"
+  "I guess we\'re on first name basis now\""
   font: "system_font"
   id: "text"
   xanchor: XANCHOR_NONE
@@ -116,7 +117,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "perhaps_response_parent"
+  parent: "yourname_response_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -128,73 +129,8 @@ nodes {
 }
 nodes {
   position {
-    x: 150.0
-    y: 307.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 260.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEXT
-  blend_mode: BLEND_MODE_ALPHA
-  text: "[option 1]\n"
-  "Maybe, because you\'re \n"
-  "a random voice on the radio?"
-  font: "system_font"
-  id: "random"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
-  outline {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  shadow {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  adjust_mode: ADJUST_MODE_FIT
-  line_break: false
-  parent: "perhaps_response_parent"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  outline_alpha: 1.0
-  shadow_alpha: 1.0
-  template_node_child: false
-  text_leading: 1.0
-  text_tracking: 0.0
-}
-nodes {
-  position {
-    x: 599.0
-    y: 309.0
+    x: 695.0
+    y: 252.0
     z: 0.0
     w: 1.0
   }
@@ -225,11 +161,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 2]\n"
-  "Because I\'m tired, ok. \n"
-  "I\'ve been hiking through\n"
-  "this forest all day..."
+  "Well nice to meet you fritz"
   font: "system_font"
-  id: "tired"
+  id: "nicetomeet"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -247,7 +181,72 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "perhaps_response_parent"
+  parent: "yourname_response_parent"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  outline_alpha: 1.0
+  shadow_alpha: 1.0
+  template_node_child: false
+  text_leading: 1.0
+  text_tracking: 0.0
+}
+nodes {
+  position {
+    x: 215.0
+    y: 245.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 250.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEXT
+  blend_mode: BLEND_MODE_ALPHA
+  text: "[option 1]\n"
+  "What kind of name is \'Fritz\',\n"
+  "Is it a nickname?"
+  font: "system_font"
+  id: "whatname"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_CENTER
+  outline {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  shadow {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  adjust_mode: ADJUST_MODE_FIT
+  line_break: false
+  parent: "yourname_response_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0

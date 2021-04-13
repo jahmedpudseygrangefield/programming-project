@@ -223,7 +223,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Carry on"
+  text: "Carry on, going down this path"
   font: "system_font"
   id: "0B"
   xanchor: XANCHOR_NONE

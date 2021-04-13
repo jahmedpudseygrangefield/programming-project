@@ -1,4 +1,4 @@
-script: "/main/level0/dialogue_choices/dialogue3/level0_dialogue_choice_stayquiet.gui_script"
+script: "/main/level0/dialogue_choices/dialogue2/level0_dialogue_choice_stayquiet.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"

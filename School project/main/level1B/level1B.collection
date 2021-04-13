@@ -1,18 +1,18 @@
-name: "level1A"
+name: "level1B"
 scale_along_z: 0
 embedded_instances {
   id: "background"
   data: "embedded_components {\n"
-  "  id: \"background1\"\n"
+  "  id: \"background\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
-  "default_animation: \\\"Level1a\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
+  "    x: -1284.0\n"
+  "    y: 20.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -23,16 +23,16 @@ embedded_instances {
   "  }\n"
   "}\n"
   "embedded_components {\n"
-  "  id: \"background\"\n"
+  "  id: \"background1\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
-  "default_animation: \\\"Level1a\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: -1087.0\n"
-  "    y: 0.0\n"
+  "    x: -2765.0\n"
+  "    y: 20.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -46,13 +46,13 @@ embedded_instances {
   "  id: \"background2\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
-  "default_animation: \\\"Level1a\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: 1087.0\n"
-  "    y: 0.0\n"
+  "    x: 193.0\n"
+  "    y: 20.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -66,13 +66,13 @@ embedded_instances {
   "  id: \"background3\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
-  "default_animation: \\\"Level1a\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: 2174.0\n"
-  "    y: 0.0\n"
+  "    x: 1672.0\n"
+  "    y: 20.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -86,13 +86,13 @@ embedded_instances {
   "  id: \"background4\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
-  "default_animation: \\\"Level1a\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: -2174.0\n"
-  "    y: 0.0\n"
+  "    x: 3149.0\n"
+  "    y: 20.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -106,13 +106,13 @@ embedded_instances {
   "  id: \"background5\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
-  "default_animation: \\\"Level1a\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: 3261.0\n"
-  "    y: 0.0\n"
+  "    x: 4622.0\n"
+  "    y: 20.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -126,33 +126,13 @@ embedded_instances {
   "  id: \"background6\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
-  "default_animation: \\\"Level1a\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: 4348.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"background7\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
-  "default_animation: \\\"Level1a\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 5435.0\n"
-  "    y: 0.0\n"
+  "    x: 6092.0\n"
+  "    y: 20.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -200,7 +180,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"player_level1_temp\"\n"
   "  type: \"collectionfactory\"\n"
-  "  data: \"prototype: \\\"/main/player/player_level1_temp/player_level1_temp.collection\\\"\\n"
+  "  data: \"prototype: \\\"/main/player/player.collection\\\"\\n"
   "load_dynamically: true\\n"
   "\"\n"
   "  position {\n"
@@ -392,61 +372,6 @@ embedded_instances {
   position {
     x: 0.0
     y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "disabler"
-  data: "components {\n"
-  "  id: \"dialogue_trigger_disabler\"\n"
-  "  component: \"/main/level1A/dialogue_choices/dialogue_trigger_disabler.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: -1343.0
-    y: 948.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "trigger"
-  data: ""
-  position {
-    x: 1397.0
-    y: 1110.0
     z: 0.0
   }
   rotation {
