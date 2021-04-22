@@ -44,10 +44,9 @@ function on_message(self, message_id, message, sender, enter, other_id)
 		msg.post("level0:/level_choice", "level0_level_choice")
 
 		
---===================================================================
---LEVEL 1A:
---elseif 
-
-		
+		--===================================================================
+		--LEVEL 1A:
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_fritz") then
+		msg.post("level1A:/dialogue_response_fritz", "dialogue_response_fritz") 
 	end
 end
