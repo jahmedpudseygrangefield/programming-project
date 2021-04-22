@@ -197,6 +197,21 @@ embedded_instances {
   "    w: 1.0\n"
   "  }\n"
   "}\n"
+  "components {\n"
+  "  id: \"teleporter\"\n"
+  "  component: \"/main/level0/teleporter.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
   "embedded_components {\n"
   "  id: \"player_sprite\"\n"
   "  type: \"collectionfactory\"\n"
@@ -217,7 +232,7 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 117.0
+    x: 86.0
     y: 80.0
     z: 1.0
   }

@@ -1,0 +1,6 @@
+function on_message(self, message_id, message, sender)
+	if message_id == hash("teleport") then 
+		local position = vmath.vector3(5000, 20, 1)
+		go.set_position(position) 
+	end
+end
