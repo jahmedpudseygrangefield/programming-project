@@ -1,8 +1,0 @@
-function init(self)
-	--Disables all the current triggers in level1A
-	msg.post("/trigger#dialogue_trigger_fritz", "disable")
-	msg.post("/trigger#dialogue_trigger_littletired&becausetired", "disable")
-	msg.post("/trigger#dialogue_trigger_might&fine", "disable")
-	msg.post("/trigger#dialogue_trigger_nicetomeetyou", "disable")
-	msg.post("/trigger#dialogue_trigger_uncomfortable&voiceradio", "disable")	
-end
