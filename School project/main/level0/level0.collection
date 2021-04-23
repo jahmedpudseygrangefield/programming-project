@@ -177,7 +177,7 @@ embedded_instances {
   scale3 {
     x: 1.0
     y: 1.0
-    z: 1.0
+    z: 1.0E-6
   }
 }
 embedded_instances {
@@ -395,6 +395,44 @@ embedded_instances {
   "    index: 0\\n"
   "    count: 3\\n"
   "  }\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 12336.596\\n"
+  "      y: 1209.441\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 3\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 12266.896\\n"
+  "      y: -736.329\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 6\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  data: 10.0\\n"
+  "  data: 340.0\\n"
+  "  data: 0.5\\n"
+  "  data: 10.0\\n"
+  "  data: 340.0\\n"
+  "  data: 0.5\\n"
   "  data: 10.0\\n"
   "  data: 340.0\\n"
   "  data: 0.5\\n"
@@ -442,6 +480,44 @@ embedded_instances {
   "    index: 0\\n"
   "    count: 3\\n"
   "  }\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 16474.059\\n"
+  "      y: 2093.388\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 3\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  shapes {\\n"
+  "    shape_type: TYPE_BOX\\n"
+  "    position {\\n"
+  "      x: 16567.96\\n"
+  "      y: -1585.571\\n"
+  "      z: 0.0\\n"
+  "    }\\n"
+  "    rotation {\\n"
+  "      x: 0.0\\n"
+  "      y: 0.0\\n"
+  "      z: 0.0\\n"
+  "      w: 1.0\\n"
+  "    }\\n"
+  "    index: 6\\n"
+  "    count: 3\\n"
+  "  }\\n"
+  "  data: 10.0\\n"
+  "  data: 340.0\\n"
+  "  data: 0.5\\n"
+  "  data: 10.0\\n"
+  "  data: 340.0\\n"
+  "  data: 0.5\\n"
   "  data: 10.0\\n"
   "  data: 340.0\\n"
   "  data: 0.5\\n"
@@ -1021,7 +1097,7 @@ embedded_instances {
   id: "level_choice"
   data: "components {\n"
   "  id: \"level0_level_choice_0\"\n"
-  "  component: \"/main/level0/level_choices/level0_level_choice_0.gui\"\n"
+  "  component: \"/main/level0/set0/level_choices/level0_level_choice_0.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1114,7 +1190,7 @@ embedded_instances {
   id: "dialogue_response_slim"
   data: "components {\n"
   "  id: \"level0_dialogue_choice_slim\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue1/level0_dialogue_choice_slim.gui\"\n"
+  "  component: \"/main/level0/set0/dialogue_choices/dialogue1/level0_dialogue_choice_slim.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1149,7 +1225,7 @@ embedded_instances {
   id: "dialogue_response_nothing"
   data: "components {\n"
   "  id: \"level0_dialogue_choice_saynothing\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue1/level0_dialogue_choice_saynothing.gui\"\n"
+  "  component: \"/main/level0/set0/dialogue_choices/dialogue1/level0_dialogue_choice_saynothing.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1184,7 +1260,7 @@ embedded_instances {
   id: "dialogue_response_stayquiet"
   data: "components {\n"
   "  id: \"level0_dialogue_choice_stayquiet\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue2/level0_dialogue_choice_stayquiet.gui\"\n"
+  "  component: \"/main/level0/set0/dialogue_choices/dialogue2/level0_dialogue_choice_stayquiet.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1219,7 +1295,7 @@ embedded_instances {
   id: "dialogue_response_perhaps"
   data: "components {\n"
   "  id: \"level0_dialogue_choice_perhaps\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue2/level0_dialogue_choice_perhaps.gui\"\n"
+  "  component: \"/main/level0/set0/dialogue_choices/dialogue2/level0_dialogue_choice_perhaps.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1254,7 +1330,7 @@ embedded_instances {
   id: "dialogue_response_yourname"
   data: "components {\n"
   "  id: \"level0_dialogue_option_yourname\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue2/level0_dialogue_option_yourname.gui\"\n"
+  "  component: \"/main/level0/set0/dialogue_choices/dialogue2/level0_dialogue_option_yourname.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1289,7 +1365,7 @@ embedded_instances {
   id: "dialogue_response_youtoo"
   data: "components {\n"
   "  id: \"level0_dialogue_choice_youtoo\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue2/level0_dialogue_choice_youtoo.gui\"\n"
+  "  component: \"/main/level0/set0/dialogue_choices/dialogue2/level0_dialogue_choice_youtoo.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1324,7 +1400,7 @@ embedded_instances {
   id: "disabler"
   data: "components {\n"
   "  id: \"dialogue_trigger_disabler\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue_trigger_disabler.script\"\n"
+  "  component: \"/main/level0/dialogue_trigger_disabler.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1356,10 +1432,10 @@ embedded_instances {
   }
 }
 embedded_instances {
-  id: "dialogue_choice_0"
+  id: "dialogue_response_0"
   data: "components {\n"
   "  id: \"level0_dialogue_choice\"\n"
-  "  component: \"/main/level0/dialogue_choices/dialogue0/level0_dialogue_choice.gui\"\n"
+  "  component: \"/main/level0/set0/dialogue_choices/dialogue0/level0_dialogue_choice.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -1530,8 +1606,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 189.0
-    y: 111.0
+    x: 145.0
+    y: 103.0
     z: 0.0
   }
   rotation {
@@ -1543,7 +1619,7 @@ embedded_instances {
   scale3 {
     x: 1.0
     y: 1.0
-    z: 2.0
+    z: 1.0
   }
 }
 embedded_instances {
@@ -1588,6 +1664,461 @@ embedded_instances {
   position {
     x: -55.0
     y: -75.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "background_level1A"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"Level1a\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 90.0\n"
+  "    y: -397.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite1\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"Level1a\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 1176.0\n"
+  "    y: -397.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite2\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"Level1a\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 2263.0\n"
+  "    y: -397.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite3\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"Level1a\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 3349.0\n"
+  "    y: -397.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite4\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"Level1a\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: -992.0\n"
+  "    y: -397.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite5\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"Level1a\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 4435.0\n"
+  "    y: -397.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite6\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"Level1a\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 5523.0\n"
+  "    y: -397.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite7\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"Level1a\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: -2075.0\n"
+  "    y: -397.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 13154.0
+    y: 1517.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0E-6
+  }
+}
+embedded_instances {
+  id: "background_level1B"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: -802.0\n"
+  "    y: -229.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite1\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 677.0\n"
+  "    y: -229.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite2\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 2154.0\n"
+  "    y: -229.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite3\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/assets/graphics.atlas\\\"\\n"
+  "default_animation: \\\"background upscaled\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: -2283.0\n"
+  "    y: -229.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 14243.0
+    y: -411.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0E-6
+  }
+}
+embedded_instances {
+  id: "dialogue_response1A_fritz"
+  data: "components {\n"
+  "  id: \"dialogue_response1A_fritz\"\n"
+  "  component: \"/main/level0/set1A/dialogue_choices/dialogue0/dialogue_response1A_fritz.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 13896.0
+    y: 1656.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "dialogue_response1A_littletired&becausetired"
+  data: "components {\n"
+  "  id: \"dialogue_response1A_littletired&becausetired\"\n"
+  "  component: \"/main/level0/set1A/dialogue_choices/dialogue0/dialogue_response1A_littletired&becausetired.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 13911.0
+    y: 2492.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "dialogue_response1A_might&fine"
+  data: "components {\n"
+  "  id: \"dialogue_response1A_might&fine\"\n"
+  "  component: \"/main/level0/set1A/dialogue_choices/dialogue0/dialogue_response1A_might&fine.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 13909.0
+    y: 3331.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "dialogue_response1A_uncomfortable&voiceradio"
+  data: "components {\n"
+  "  id: \"dialogue_response1A_uncomfortable&voiceradio\"\n"
+  "  component: \"/main/level0/set1A/dialogue_choices/dialogue0/dialogue_response1A_uncomfortable&voiceradio.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 13940.0
+    y: 4170.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "dialogue_response1A_nicetomeetyou"
+  data: "components {\n"
+  "  id: \"dialogue_response1A_nicetomeetyou\"\n"
+  "  component: \"/main/level0/set1A/dialogue_choices/dialogue0/dialogue_response1A_nicetomeetyou.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 13952.0
+    y: 4986.0
     z: 0.0
   }
   rotation {

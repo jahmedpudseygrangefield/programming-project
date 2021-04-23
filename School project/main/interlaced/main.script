@@ -39,20 +39,5 @@ function on_message(self, message_id, message, sender)
 	--code that shutsdown the game when pressed
 	elseif message_id == hash("shutdown") then
 		msg.post(os.exit())
-
-		--LEVEL 0 - CHOICES LOADING SCRIPT
-
-		
-		--WIP - New solution involving loader for gui continuity (not efficent but worth a try)
-	elseif message_id == hash("load_level1A") then 
-		msg.post(self.current_collection, "unload")
-		msg.post("#level1A_proxy","load")
-		self.current_collection = "#level1A_proxy"
-
-
-	elseif message_id == hash("load_level1B") then 
-		msg.post(self.current_collection, "unload")
-		msg.post("#level1B_proxy", "load")
-		self.current_collection = "level1B_proxy"
 	end
 end

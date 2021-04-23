@@ -1,6 +1,12 @@
 function on_message(self, message_id, message, sender)
-	if message_id == hash("teleport") then 
-		local position = vmath.vector3(5000, 20, 1)
+		--Level1A
+	if message_id == hash("move_level1A") then 
+		local position = vmath.vector3(12851, 886, 1)
 		go.set_position(position) 
+
+		--Level1B
+	elseif message_id == hash("move_level1B") then 
+		local position = vmath.vector3(12851, -902, 1)
+		go.set_position(position)
 	end
 end

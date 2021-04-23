@@ -1,4 +1,4 @@
-script: "/main/level0/dialogue_choices/dialogue1/level0_dialogue_choice_saynothing.gui_script"
+script: "/main/level0/set1A/dialogue_choices/dialogue0/dialogue_response1A_uncomfortable&voiceradio.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -11,8 +11,8 @@ background_color {
 }
 nodes {
   position {
-    x: 14.0
-    y: -95.0
+    x: -375.0
+    y: 512.0
     z: 0.0
     w: 1.0
   }
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "nothing_response_parent"
+  id: "uncomfortable&radio_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 450.0
-    y: 574.0
+    x: 870.0
+    y: -57.0
     z: 0.0
     w: 1.0
   }
@@ -96,9 +96,9 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "\"Alright then, not so talkative, I see...\""
+  text: "\"Well my names fritz, so we\'re no longer strangers\""
   font: "system_font"
-  id: "invalid"
+  id: "text"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -116,7 +116,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "nothing_response_parent"
+  parent: "uncomfortable&radio_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -128,8 +128,8 @@ nodes {
 }
 nodes {
   position {
-    x: 203.0
-    y: 276.0
+    x: 873.0
+    y: -353.0
     z: 0.0
     w: 1.0
   }
@@ -160,10 +160,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 1]\n"
-  "[continue to say nothing \n"
-  "and stay quiet]"
+  "[continue walking]"
   font: "system_font"
-  id: "stayquiet"
+  id: "carryonwalking"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -181,72 +180,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "nothing_response_parent"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  outline_alpha: 1.0
-  shadow_alpha: 1.0
-  template_node_child: false
-  text_leading: 1.0
-  text_tracking: 0.0
-}
-nodes {
-  position {
-    x: 703.0
-    y: 276.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 275.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEXT
-  blend_mode: BLEND_MODE_ALPHA
-  text: "[option 2]\n"
-  "Perhaps I am talkative, and\n"
-  "maybe I don\'t want to talk to you?"
-  font: "system_font"
-  id: "perhaps"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
-  outline {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  shadow {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  adjust_mode: ADJUST_MODE_FIT
-  line_break: false
-  parent: "nothing_response_parent"
+  parent: "uncomfortable&radio_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0

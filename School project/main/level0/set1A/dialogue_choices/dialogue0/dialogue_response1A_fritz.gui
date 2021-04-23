@@ -1,4 +1,4 @@
-script: "/main/level0/dialogue_choices/dialogue2/level0_dialogue_choice_perhaps.gui_script"
+script: "/main/level0/set1A/dialogue_choices/dialogue0/dialogue_response1A_fritz.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -11,8 +11,8 @@ background_color {
 }
 nodes {
   position {
-    x: 100.0
-    y: -158.0
+    x: -167.0
+    y: 603.0
     z: 0.0
     w: 1.0
   }
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "perhaps_response_parent"
+  id: "slim_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 383.0
-    y: 607.0
+    x: 669.0
+    y: -151.0
     z: 0.0
     w: 1.0
   }
@@ -96,7 +96,8 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "\"And why would you  not want to talk to me?\""
+  text: "\"Well, I guess its my name. Anyways,\n"
+  "what kind of name is slim?\""
   font: "system_font"
   id: "text"
   xanchor: XANCHOR_NONE
@@ -116,7 +117,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "perhaps_response_parent"
+  parent: "slim_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -128,8 +129,8 @@ nodes {
 }
 nodes {
   position {
-    x: 150.0
-    y: 307.0
+    x: 665.0
+    y: -453.0
     z: 0.0
     w: 1.0
   }
@@ -146,8 +147,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 260.0
-    y: 100.0
+    x: 330.0
+    y: 75.0
     z: 0.0
     w: 1.0
   }
@@ -160,10 +161,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 1]\n"
-  "Maybe, because you\'re \n"
-  "a random voice on the radio?"
+  "Well... uhm, I guess slim is just my name"
   font: "system_font"
-  id: "random"
+  id: "mynameslim"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -181,73 +181,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "perhaps_response_parent"
-  layer: ""
-  inherit_alpha: true
-  alpha: 1.0
-  outline_alpha: 1.0
-  shadow_alpha: 1.0
-  template_node_child: false
-  text_leading: 1.0
-  text_tracking: 0.0
-}
-nodes {
-  position {
-    x: 599.0
-    y: 309.0
-    z: 0.0
-    w: 1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  size {
-    x: 200.0
-    y: 100.0
-    z: 0.0
-    w: 1.0
-  }
-  color {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  type: TYPE_TEXT
-  blend_mode: BLEND_MODE_ALPHA
-  text: "[option 2]\n"
-  "Because I\'m tired, ok. \n"
-  "I\'ve been hiking through\n"
-  "this forest all day..."
-  font: "system_font"
-  id: "tired"
-  xanchor: XANCHOR_NONE
-  yanchor: YANCHOR_NONE
-  pivot: PIVOT_CENTER
-  outline {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  shadow {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-    w: 1.0
-  }
-  adjust_mode: ADJUST_MODE_FIT
-  line_break: false
-  parent: "perhaps_response_parent"
+  parent: "slim_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0

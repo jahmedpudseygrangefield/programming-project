@@ -12,7 +12,7 @@ function on_message(self, message_id, message, sender, enter, other_id)
 --LEVEL0:
 	--All level0 dialogue pairings
 	if message_id == hash("trigger_response") and message.group == hash("dialogue_trigger0") then --checks if the group associated with the trigger works too
-		msg.post("level0:/dialogue_choice_0", "level0_dialogue_choice")
+		msg.post("level0:/dialogue_response_0", "level0_dialogue_choice")
 		
 		--dialogue slim response 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_slim") then
@@ -46,7 +46,6 @@ function on_message(self, message_id, message, sender, enter, other_id)
 		
 		--===================================================================
 		--LEVEL 1A:
-	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_fritz") then
-		msg.post("level1A:/dialogue_response_fritz", "dialogue_response_fritz") 
+	--elseif
 	end
 end

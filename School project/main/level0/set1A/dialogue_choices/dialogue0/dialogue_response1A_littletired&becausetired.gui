@@ -1,4 +1,4 @@
-script: "/main/level0/dialogue_choices/dialogue2/level0_dialogue_choice_youtoo.gui_script"
+script: "/main/level0/set1A/dialogue_choices/dialogue0/dialogue_response1A_littletired&becausetired.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -11,8 +11,8 @@ background_color {
 }
 nodes {
   position {
-    x: 19.0
-    y: -106.0
+    x: -163.0
+    y: 524.0
     z: 0.0
     w: 1.0
   }
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "youtoo_response_parent"
+  id: "littletired&becausetired_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 481.0
-    y: 560.0
+    x: 663.0
+    y: -69.0
     z: 0.0
     w: 1.0
   }
@@ -96,7 +96,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "\"Whats up with you?\""
+  text: "\"Tired... already? Havent you just started?\""
   font: "system_font"
   id: "text"
   xanchor: XANCHOR_NONE
@@ -116,7 +116,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "youtoo_response_parent"
+  parent: "littletired&becausetired_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -128,8 +128,8 @@ nodes {
 }
 nodes {
   position {
-    x: 210.0
-    y: 257.0
+    x: 415.0
+    y: -382.0
     z: 0.0
     w: 1.0
   }
@@ -146,8 +146,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 340.0
-    y: 100.0
+    x: 250.0
+    y: 50.0
     z: 0.0
     w: 1.0
   }
@@ -160,11 +160,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 1]\n"
-  "I dont know, I\'m just a little\n"
-  "uncomfortable giving my name to a stranger\n"
-  "on the radio"
+  "\"Well, I dont go hiking often\""
   font: "system_font"
-  id: "uncomfortable"
+  id: "donthikeoften"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -182,7 +180,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "youtoo_response_parent"
+  parent: "littletired&becausetired_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -194,8 +192,8 @@ nodes {
 }
 nodes {
   position {
-    x: 753.0
-    y: 256.0
+    x: 882.0
+    y: -400.0
     z: 0.0
     w: 1.0
   }
@@ -212,8 +210,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 280.0
-    y: 100.0
+    x: 325.0
+    y: 50.0
     z: 0.0
     w: 1.0
   }
@@ -226,9 +224,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 2]\n"
-  "I\'m just a little tired, thats all."
+  "\"How do you know that I\'ve just started?\""
   font: "system_font"
-  id: "tired"
+  id: "text2"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -246,7 +244,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "youtoo_response_parent"
+  parent: "littletired&becausetired_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
