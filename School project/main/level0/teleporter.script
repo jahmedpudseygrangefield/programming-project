@@ -1,3 +1,8 @@
+function init(self)
+	local start_pos = vmath.vector3(145, 103, 1)
+	go.set_position(start_pos)
+end
+
 function on_message(self, message_id, message, sender)
 		--Level1A
 	if message_id == hash("move_level1A") then 
