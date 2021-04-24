@@ -3,3 +3,13 @@ function init(self)
 	local node_littlebecause = gui.get_node("littletired&becausetired_parent")
 	gui.set_enabled(node_littlebecause, false)
 end
+
+function on_message(message, message_id, self, sender)
+	if message_id == hash("dialogue_response1A_littletired&becausetired") then 
+		local node_littlebecause = gui.get_node("littletired&becausetired_parent")
+		gui.set_enabled(node_littlebecause, true)
+
+		msg.post(".", "acquire_input_focus")
+		msg.post("/trigger#dialogue_trigger1A_littletired&becausetired", "disable")
+	end
+end

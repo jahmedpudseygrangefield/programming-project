@@ -3,3 +3,13 @@ function init(self)
 	local node_nicetomeetyou = gui.get_node("nicetomeetyou_parent")
 	gui.set_enabled(node_nicetomeetyou, false)
 end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("dialogue_responsenicetomeetyou") then 
+		local node_nicetomeetyou = gui.get_node("nicetomeetyou_parent")
+		gui.set_enabled(node_nicetomeetyou, true)
+
+		msg.post(".", "acquire_input_focus")
+		msg.post("/trigger#dialogue_trigger1A_nicetomeetyou", "disable")
+	end
+end

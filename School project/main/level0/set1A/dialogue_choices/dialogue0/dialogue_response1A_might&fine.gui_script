@@ -3,3 +3,13 @@ function init(self)
 	local node_mightfine = gui.get_node("might&fine_parent")
 	gui.set_enabled(node_mightfine, false)
 end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("dialogue_response1A_might&fine") then 
+		local node_mightfine = gui.get_node("might&fine_parent")
+		gui.set_enabled(node_mightfine, true)
+
+		msg.post(".", "acquire_input_focus")
+		msg.post("/trigger#dialogue_trigger1A_might&fine", "disable")
+	end
+end

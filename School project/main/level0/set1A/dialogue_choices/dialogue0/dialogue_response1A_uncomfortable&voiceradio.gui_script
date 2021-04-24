@@ -3,3 +3,13 @@ function init(self)
 	local node_uncomfortableradio = gui.get_node("uncomfortable&radio_parent")
 	gui.set_enabled(node_uncomfortableradio, false)
 end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("dialogue_response_uncomfortable") then 
+		local node_uncomfortableradio = gui.get_node("uncomfortable&radio_parent")
+		gui.set_enabled(node_uncomfortableradio, true)
+
+		msg.post(".", "acquire_input_focus")
+		msg.post("/trigger#dialogue_trigger1A_uncomfortable&voiceonradio", "disable")
+	end
+end

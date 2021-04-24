@@ -46,6 +46,19 @@ function on_message(self, message_id, message, sender, enter, other_id)
 		
 		--===================================================================
 		--LEVEL 1A:
-	--elseif
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_fritz") then
+		msg.post("level0:/dialogue_response1A_fritz", "dialogue_response1A_fritz")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_littletired&becausetired") then 
+		msg.post("level0:/dialogue_response1A_littletired&becausetired", "dialogue_response1A_littletired&becausetired")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_might&fine") then 
+		msg.post("level0:/dialogue_response1A_might&fine", "dialogue_response1A_might&fine")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_nicetomeetyou") then 
+		msg.post("level0:/dialogue_response1A_nicetomeetyou", "dialogue_responsenicetomeetyou")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_uncomfortable&voiceonradio") then 
+		msg.post("level0:/dialogue_response1A_uncomfortable&voiceonradio", "dialogue_response_uncomfortable&voiceonradio")	
 	end
 end
