@@ -20,7 +20,7 @@ embedded_instances {
   "}\n"
   "components {\n"
   "  id: \"kinematic_collisions\"\n"
-  "  component: \"/main/interlaced/kinematic_collisions.script\"\n"
+  "  component: \"/main/player/kinematic_collisions.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
