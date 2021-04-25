@@ -226,7 +226,7 @@ nodes {
   text: "[option 2]\n"
   "\"How do you know that I\'ve just started?\""
   font: "system_font"
-  id: "text2"
+  id: "howdoyouknow"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER

@@ -13,3 +13,28 @@ function on_message(message, message_id, self, sender)
 		msg.post("/trigger#dialogue_trigger1A_littletired&becausetired", "disable")
 	end
 end
+
+function on_input(self, action_id, action)
+	--donthikeoften  dialogue option
+	if action_id == hash("touch") and gui.pick_node(gui.get_node("donthikeoften"), action.x, action.y) then
+		--GUI disappears after option is selected & takesaway input 
+		local node_littlebecause = gui.get_node("littletired&becausetired_parent")
+		gui.set_enabled(node_littlebecause, false) 
+		msg.post(".", "release_input_focus")
+
+		--Disables collision & enables trigger for next apropriate response 
+		msg.post("/collision#level1A_dialogue0_collision", "disable")
+		msg.post("", "enable")
+
+		--howdoyouknow	dialogue response option 
+	elseif action_id == hash("touch") and gui.pick_node(gui.get_node("howdoyouknow"), action.x, action.y) then
+		--GUI disappears after option is selected & takesaway input 
+		local node_littlebecause = gui.get_node("littletired&becausetired_parent")
+		gui.set_enabled(node_littlebecause, false) 
+		msg.post(".", "release_input_focus")
+
+		--Disables collision & enables trigger for next apropriate response 
+		msg.post("/collision#level1A_dialogue0_collision", "disable")
+		msg.post("", "enable")
+	end
+end
