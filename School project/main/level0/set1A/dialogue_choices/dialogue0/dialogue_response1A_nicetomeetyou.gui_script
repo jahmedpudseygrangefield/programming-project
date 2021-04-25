@@ -19,7 +19,7 @@ function on_input(self, action_id, action)
 	if action_id == hash("touch") and gui.pick_node(gui.get_node("continuewalking"), action.x, action.y) then
 		--GUI disappears after option is selected & takesaway input 
 		local node_nicetomeetyou = gui.get_node("nicetomeetyou_parent")
-		gui.set_enabled(, false) 
+		gui.set_enabled(node_nicetomeetyou, false) 
 		msg.post(".", "release_input_focus")
 
 		--Disables collision & enables trigger for next apropriate response 
