@@ -15,6 +15,11 @@ function init(self)
 	msg.post("/trigger#dialogue_trigger1A_might&fine", "disable")
 	msg.post("/trigger#dialogue_trigger1A_nicetomeetyou", "disable")
 	msg.post("/trigger#dialogue_trigger1A_uncomfortable&voiceonradio", "disable")
-
+	
+	msg.post("/trigger#dialogue_trigger1A_4choices", "disable")
+	msg.post("/trigger#dialogue_trigger1A_dont&rather", "disable")
+	msg.post("/trigger#dialogue_trigger1A_then&howknow", "disable")
+	
+	
 	--Level1B
 end
