@@ -1,4 +1,4 @@
-script: "/main/level0/set1A/dialogue_choices/dialogue0/dialogue_response1A_littletired&becausetired.gui_script"
+script: "/main/level1A/dialogue_choices/dialogue1/dialogue_response1A_4choices.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -11,8 +11,8 @@ background_color {
 }
 nodes {
   position {
-    x: -163.0
-    y: 524.0
+    x: -134.0
+    y: 585.0
     z: 0.0
     w: 1.0
   }
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "littletired&becausetired_parent"
+  id: "4choices_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 663.0
-    y: -69.0
+    x: 634.0
+    y: -136.0
     z: 0.0
     w: 1.0
   }
@@ -96,7 +96,8 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "\"Tired... already? Havent you just started?\""
+  text: "\"Well, given that we\'ve gotten introductions out \n"
+  "of the way, what brings you here?\""
   font: "system_font"
   id: "text"
   xanchor: XANCHOR_NONE
@@ -116,7 +117,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "littletired&becausetired_parent"
+  parent: "4choices_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -128,8 +129,8 @@ nodes {
 }
 nodes {
   position {
-    x: 415.0
-    y: -382.0
+    x: 360.0
+    y: -434.0
     z: 0.0
     w: 1.0
   }
@@ -146,8 +147,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 250.0
-    y: 50.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -160,9 +161,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 1]\n"
-  "\"Well, I dont go hiking often\""
+  "Dont worry about it"
   font: "system_font"
-  id: "donthikeoften"
+  id: "dontworry"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -180,7 +181,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "littletired&becausetired_parent"
+  parent: "4choices_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -192,8 +193,8 @@ nodes {
 }
 nodes {
   position {
-    x: 882.0
-    y: -400.0
+    x: 834.0
+    y: -435.0
     z: 0.0
     w: 1.0
   }
@@ -210,8 +211,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 325.0
-    y: 50.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -224,9 +225,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 2]\n"
-  "\"How do you know that I\'ve just started?\""
+  "[ignore the question]"
   font: "system_font"
-  id: "howdoyouknow"
+  id: "ignore"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -244,7 +245,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "littletired&becausetired_parent"
+  parent: "4choices_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0

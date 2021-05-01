@@ -1,4 +1,4 @@
-script: "/main/level0/set1A/dialogue_choices/dialogue0/dialogue_response1A_might&fine.gui_script"
+script: "/main/level1A/dialogue_choices/dialogue0/dialogue_response1A_fritz.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -11,8 +11,8 @@ background_color {
 }
 nodes {
   position {
-    x: -149.0
-    y: 546.0
+    x: -167.0
+    y: 603.0
     z: 0.0
     w: 1.0
   }
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "might&fine_parent"
+  id: "slim_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 646.0
-    y: -94.0
+    x: 669.0
+    y: -151.0
     z: 0.0
     w: 1.0
   }
@@ -96,12 +96,10 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "[option 1]\n"
-  "\"Well my names fritz, \n"
-  "now that  we\'ve got names out the way, \n"
-  "maybe we can talk about something else\""
+  text: "\"Well, I guess its my name. Anyways,\n"
+  "what kind of name is slim?\""
   font: "system_font"
-  id: "might&fine"
+  id: "text"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -119,7 +117,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "might&fine_parent"
+  parent: "slim_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -131,8 +129,8 @@ nodes {
 }
 nodes {
   position {
-    x: 652.0
-    y: -392.0
+    x: 665.0
+    y: -453.0
     z: 0.0
     w: 1.0
   }
@@ -149,7 +147,7 @@ nodes {
     w: 1.0
   }
   size {
-    x: 350.0
+    x: 330.0
     y: 75.0
     z: 0.0
     w: 1.0
@@ -163,9 +161,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 1]\n"
-  "\"Sure, so what do you want to talk about?\""
+  "Well... uhm, I guess slim is just my name"
   font: "system_font"
-  id: "whattotalkabout"
+  id: "mynameslim"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -183,7 +181,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "might&fine_parent"
+  parent: "slim_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0

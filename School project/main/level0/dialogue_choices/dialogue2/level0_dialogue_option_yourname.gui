@@ -1,4 +1,4 @@
-script: "/main/level0/set0/dialogue_choices/dialogue2/level0_dialogue_option_yourname.gui_script"
+script: "/main/level0/dialogue_choices/dialogue2/level0_dialogue_option_yourname.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
