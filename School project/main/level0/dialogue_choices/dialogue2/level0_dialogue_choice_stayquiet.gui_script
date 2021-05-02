@@ -26,7 +26,7 @@ function on_input(self, action_id, action)
 
 		--Disables collision & enables trigger for next apropriate response 
 		msg.post("/collision#dialogue2_collision", "disable")
-		msg.post("/trigger#dialogue_trigger1A_might&fine", "enable")
+		msg.post("/trigger#level_trigger_fine&maybe", "enable")
 
 		--tired dialogue response option 
 	elseif action_id == hash("touch") and gui.pick_node(gui.get_node("fine"), action.x, action.y) then
@@ -37,6 +37,6 @@ function on_input(self, action_id, action)
 
 		--Disables collision & enables trigger for next apropriate response 
 		msg.post("/collision#dialogue2_collision", "disable")
-		msg.post("/trigger#dialogue_trigger1A_might&fine", "enable")
+		msg.post("/trigger#level_trigger_fine&maybe", "enable")
 	end
 end

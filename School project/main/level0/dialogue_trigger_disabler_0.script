@@ -1,4 +1,5 @@
 function init(self)
+	--dialogue choices 
 	msg.post("/trigger#dialogue_trigger_nothing", "disable")
 	msg.post("/trigger#dialogue_trigger_slim", "disable")
 	msg.post("/trigger#dialogue_trigger_perhaps", "disable")
@@ -6,7 +7,10 @@ function init(self)
 	msg.post("/trigger#dialogue_trigger_yourname", "disable")
 	msg.post("/trigger#dialogue_trigger_youtoo", "disable")
 
-
-	--WIP test 
+	--dialogue/level choices
 	msg.post("/trigger#level_trigger_whatname", "disable")
+	msg.post("/trigger#level_trigger_fine&maybe", "disable")
+	msg.post("/trigger#level_trigger_littletired&becausetired", "disable")
+	msg.post("/trigger#level_trigger_nicetomeet", "disable")
+	msg.post("/trigger#level_trigger_uncomfortable&voiceardio", "disable")	
 end
