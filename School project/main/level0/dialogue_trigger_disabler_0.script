@@ -9,7 +9,7 @@ function init(self)
 
 	--dialogue/level choices
 	msg.post("/trigger#level_trigger_whatname", "disable")
-	msg.post("/trigger#level_trigger_fine&maybe", "disable")
+	msg.post("/trigger#level_trigger_fine&might", "disable")
 	msg.post("/trigger#level_trigger_littletired&becausetired", "disable")
 	msg.post("/trigger#level_trigger_nicetomeet", "disable")
 	msg.post("/trigger#level_trigger_uncomfortable&voiceardio", "disable")	

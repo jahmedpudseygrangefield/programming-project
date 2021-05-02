@@ -23,7 +23,7 @@ function on_input(self, action_id, action)
 		msg.post(".", "release_input_focus")
 
 		--Disables collision & enables trigger for next apropriate response 
-		msg.post("/collision#level1A_dialogue0_collision", "disable")
+		msg.post("/collion_objects#littletired&becausetired_collision", "disable")
 		msg.post("", "enable")
 
 		--howdoyouknow	dialogue response option 
@@ -34,7 +34,7 @@ function on_input(self, action_id, action)
 		msg.post(".", "release_input_focus")
 
 		--Disables collision & enables trigger for next apropriate response 
-		msg.post("/collision#level1A_dialogue0_collision", "disable")
+		msg.post("/collion_objects#littletired&becausetired_collision", "disable")
 		msg.post("", "enable")
 	end
 end

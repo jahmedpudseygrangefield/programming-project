@@ -446,10 +446,10 @@ embedded_instances {
   }
 }
 embedded_instances {
-  id: "dialogue_response_fritz"
+  id: "dialogue_response_uncomfortable&voiceradio"
   data: "components {\n"
-  "  id: \"dialogue_response1A_fritz\"\n"
-  "  component: \"/main/level1A/set0/fritz collection/dialogue_response1A_fritz.gui\"\n"
+  "  id: \"dialogue_response1A_uncomfortable&voiceradio\"\n"
+  "  component: \"/main/level1A/set0/uncomfortable&voiceradio collection/dialogue_response1A_uncomfortable&voiceradio.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -616,7 +616,7 @@ embedded_instances {
   "  }\n"
   "}\n"
   "embedded_components {\n"
-  "  id: \"dialogue_fritz_collision\"\n"
+  "  id: \"dialogue_uncomfortable&voiceradio_collision\"\n"
   "  type: \"collisionobject\"\n"
   "  data: \"collision_shape: \\\"\\\"\\n"
   "type: COLLISION_OBJECT_TYPE_STATIC\\n"

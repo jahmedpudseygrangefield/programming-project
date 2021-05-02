@@ -38,6 +38,8 @@ function on_message(self, message_id, message, sender, enter, other_id)
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_youtoo") then
 		msg.post("level0:/dialogue_response_youtoo", "dialogue_response_youtoo")
 
+
+
 		--[[ WIP - New method of handling level passing between collections;
 		based on level collision at the end, an apropriate mini collection will load 
 		]]
@@ -45,12 +47,24 @@ function on_message(self, message_id, message, sender, enter, other_id)
 	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_whatname") then 
 		msg.post("main:/controller", "load_level1A_fritz")
 
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_uncomfortable&voiceardio") then 
+		msg.post("main:/controller", "load_level1A_uncomfortable&voiceardio")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_nicetomeet") then 
+		msg.post("main:/controller", "load_level1A_nicetomeet")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_littletired&becausetired") then 
+		msg.post("main:/controller", "load_level1A_littletired&becausetired")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_fine&might") then 
+		msg.post("main:/controller", "load_level1A_fine&mighte")
+
 		
 		--===================================================================
 		--LEVEL 1A:
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_fritz") then
 		msg.post("level1A_fritz:/dialogue_response_fritz", "dialogue_response_fritz")
-
+	--[[
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_littletired&becausetired") then 
 		msg.post("level1A:/dialogue_response1A_littletired&becausetired", "dialogue_response1A_littletired&becausetired")
 
@@ -62,5 +76,6 @@ function on_message(self, message_id, message, sender, enter, other_id)
 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_uncomfortable&voiceonradio") then 
 		msg.post("level1A:/dialogue_response1A_uncomfortable&voiceradio", "dialogue_response_uncomfortable&voiceonradio")	
+		]]
 	end
 end

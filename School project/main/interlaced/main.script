@@ -49,5 +49,26 @@ function on_message(self, message_id, message, sender)
 		msg.post(self.current_collection, "unload")
 		msg.post("#level1A_fritz_proxy", "load")
 		self.current_collection = "#level1A_fritz_proxy"
+
+	elseif message_id == hash("load_level1A_uncomfortable&voiceardio") then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_uncomfortable&voiceradio_proxy", "load")
+		self.current_collection = "#level1A_uncomfortable&voiceradio_proxy"
+
+	elseif message_id == hash("load_level1A_nicetomeet") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_nicetomeetyou_proxy", "load")
+		self.current_collection = "#level1A_nicetomeetyou_proxy"
+
+	elseif message_id == hash("load_level1A_littletired&becausetired") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_littletired&becausetired_proxy", "load")
+		self.current_collection = "#level1A_littletired&becausetired_proxy"
+
+	elseif message_id == hash("load_level1A_fine&maybe") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_might&fine_proxy", "load")
+		self.current_collection = "#level1A_might&fine_proxy"
+
 	end
 end
