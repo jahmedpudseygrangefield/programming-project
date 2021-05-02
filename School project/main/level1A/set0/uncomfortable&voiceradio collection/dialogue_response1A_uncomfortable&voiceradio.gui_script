@@ -5,12 +5,12 @@ function init(self)
 end
 
 function on_message(self, message_id, message, sender)
-	if message_id == hash("dialogue_response_uncomfortable&voiceonradio") then 
+	if message_id == hash("uncomfortable&voiceonradio") then 
 		local node_uncomfortableradio = gui.get_node("uncomfortable&radio_parent")
 		gui.set_enabled(node_uncomfortableradio, true)
 
 		msg.post(".", "acquire_input_focus")
-		msg.post("/trigger#dialogue_trigger1A_uncomfortable&voiceonradio", "disable")
+		msg.post("/trigger#dialogue_trigger_uncomfortable&voiceradio", "disable")
 	end
 end
 
@@ -23,7 +23,6 @@ function on_input(self, action_id, action)
 		msg.post(".", "release_input_focus")
 
 		--Disables collision & enables trigger for next apropriate response 
-		msg.post("/collision#level1A_dialogue0_collision", "disable")
-		msg.post("", "enable")
+		msg.post("/collion_objects#dialogue_fritz_collision", "disable")
 	end
 end

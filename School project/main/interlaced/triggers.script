@@ -62,20 +62,21 @@ function on_message(self, message_id, message, sender, enter, other_id)
 		
 		--===================================================================
 		--LEVEL 1A:
+		--dialogue pairings 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_fritz") then
 		msg.post("level1A_fritz:/dialogue_response_fritz", "dialogue_response_fritz")
-	--[[
-	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_littletired&becausetired") then 
-		msg.post("level1A:/dialogue_response1A_littletired&becausetired", "dialogue_response1A_littletired&becausetired")
 
-	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_might&fine") then 
-		msg.post("level1A:/dialogue_response1A_might&fine", "dialogue_response1A_might&fine")
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_littletired&becausetired") then 
+		msg.post("level1A_littletired&becausetired:/dialogue_response_littletired&becausetired", "dialogue_response_littletired&becausetired")
 
-	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_nicetomeetyou") then 
-		msg.post("level1A:/dialogue_response1A_nicetomeetyou", "dialogue_responsenicetomeetyou")
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_might&fine") then 
+		msg.post("level1A_might&fine:/dialogue_response_might&fine", "dialogue_response_might&fine")
 
-	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_uncomfortable&voiceonradio") then 
-		msg.post("level1A:/dialogue_response1A_uncomfortable&voiceradio", "dialogue_response_uncomfortable&voiceonradio")	
-		]]
-	end
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_nicetomeetyou") then 
+		msg.post("level1A_nicetomeetyou:/dialogue_response_nicetomeetyou", "dialogue_response_nicetomeetyou")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_uncomfortable&voiceradio") then 
+		msg.post("level1A_uncomfortable&voiceradio:/dialogue_response_uncomfortable&voiceonradio", "uncomfortable&voiceonradio")
+		
+ 	end
 end

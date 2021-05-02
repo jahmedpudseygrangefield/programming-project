@@ -5,12 +5,12 @@ function init(self)
 end
 
 function on_message(self, message_id, message, sender)
-	if message_id == hash("dialogue_response1A_might&fine") then 
+	if message_id == hash("dialogue_response_might&fine") then 
 		local node_mightfine = gui.get_node("might&fine_parent")
 		gui.set_enabled(node_mightfine, true)
 
 		msg.post(".", "acquire_input_focus")
-		msg.post("/trigger#dialogue_trigger1A_might&fine", "disable")
+		msg.post("/trigger#dialogue_trigger_might&fine", "disable")
 	end
 end
 
@@ -23,7 +23,6 @@ function on_input(self, action_id, action)
 		msg.post(".", "release_input_focus")
 
 		--Disables collision & enables trigger for next apropriate response 
-		msg.post("/collision#level1A_dialogue0_collision", "disable")
-		msg.post("", "enable")
+		msg.post("/collion_objects#dialogue_might&fine_collision", "disable")
 	end
 end

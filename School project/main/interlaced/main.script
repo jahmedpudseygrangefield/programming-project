@@ -65,7 +65,7 @@ function on_message(self, message_id, message, sender)
 		msg.post("#level1A_littletired&becausetired_proxy", "load")
 		self.current_collection = "#level1A_littletired&becausetired_proxy"
 
-	elseif message_id == hash("load_level1A_fine&maybe") then 
+	elseif message_id == hash("load_level1A_fine&might") then 
 		msg.post(self.current_collection, "unload")
 		msg.post("#level1A_might&fine_proxy", "load")
 		self.current_collection = "#level1A_might&fine_proxy"

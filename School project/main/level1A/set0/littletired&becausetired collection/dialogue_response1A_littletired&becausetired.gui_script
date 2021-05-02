@@ -5,12 +5,12 @@ function init(self)
 end
 
 function on_message(message, message_id, self, sender)
-	if message_id == hash("dialogue_response1A_littletired&becausetired") then 
+	if message_id == hash("dialogue_response_littletired&becausetired") then 
 		local node_littlebecause = gui.get_node("littletired&becausetired_parent")
 		gui.set_enabled(node_littlebecause, true)
 
 		msg.post(".", "acquire_input_focus")
-		msg.post("/trigger#dialogue_trigger1A_littletired&becausetired", "disable")
+		msg.post("/trigger#dialogue_trigger_littletired&becausetired", "disable")
 	end
 end
 
@@ -24,7 +24,6 @@ function on_input(self, action_id, action)
 
 		--Disables collision & enables trigger for next apropriate response 
 		msg.post("/collion_objects#littletired&becausetired_collision", "disable")
-		msg.post("", "enable")
 
 		--howdoyouknow	dialogue response option 
 	elseif action_id == hash("touch") and gui.pick_node(gui.get_node("howdoyouknow"), action.x, action.y) then
@@ -35,6 +34,5 @@ function on_input(self, action_id, action)
 
 		--Disables collision & enables trigger for next apropriate response 
 		msg.post("/collion_objects#littletired&becausetired_collision", "disable")
-		msg.post("", "enable")
 	end
 end
