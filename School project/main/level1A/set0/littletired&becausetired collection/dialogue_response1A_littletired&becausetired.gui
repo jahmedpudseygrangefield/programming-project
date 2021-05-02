@@ -1,4 +1,4 @@
-script: "/main/level1A/dialogue_choices/dialogue0/dialogue_response1A_littletired&becausetired.gui_script"
+script: "/main/level1A/set0/littletired&becausetired collection/dialogue_response1A_littletired&becausetired.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"

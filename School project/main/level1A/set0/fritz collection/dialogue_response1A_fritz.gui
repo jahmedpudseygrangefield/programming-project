@@ -1,4 +1,4 @@
-script: "/main/level1A/dialogue_choices/dialogue0/dialogue_response1A_nicetomeetyou.gui_script"
+script: "/main/level1A/set0/fritz collection/dialogue_response1A_fritz.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -11,8 +11,8 @@ background_color {
 }
 nodes {
   position {
-    x: -190.0
-    y: 546.0
+    x: -167.0
+    y: 603.0
     z: 0.0
     w: 1.0
   }
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "nicetomeetyou_parent"
+  id: "slim_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 688.0
-    y: -94.0
+    x: 669.0
+    y: -151.0
     z: 0.0
     w: 1.0
   }
@@ -96,7 +96,8 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "\"Nice to meet you too\""
+  text: "\"Well, I guess its my name. Anyways,\n"
+  "what kind of name is slim?\""
   font: "system_font"
   id: "text"
   xanchor: XANCHOR_NONE
@@ -116,7 +117,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "nicetomeetyou_parent"
+  parent: "slim_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -128,8 +129,8 @@ nodes {
 }
 nodes {
   position {
-    x: 689.0
-    y: -398.0
+    x: 665.0
+    y: -453.0
     z: 0.0
     w: 1.0
   }
@@ -146,8 +147,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 200.0
-    y: 100.0
+    x: 330.0
+    y: 75.0
     z: 0.0
     w: 1.0
   }
@@ -160,9 +161,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 1]\n"
-  "[continue walking]"
+  "Well... uhm, I guess slim is just my name"
   font: "system_font"
-  id: "continuewalking"
+  id: "mynameslim"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -180,7 +181,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "nicetomeetyou_parent"
+  parent: "slim_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0

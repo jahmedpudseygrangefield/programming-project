@@ -1,4 +1,4 @@
-script: "/main/level1A/dialogue_choices/dialogue0/dialogue_response1A_uncomfortable&voiceradio.gui_script"
+script: "/main/level1A/set0/nicetomeetyou collection/dialogue_response1A_nicetomeetyou.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -11,8 +11,8 @@ background_color {
 }
 nodes {
   position {
-    x: -375.0
-    y: 512.0
+    x: -190.0
+    y: 546.0
     z: 0.0
     w: 1.0
   }
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "uncomfortable&radio_parent"
+  id: "nicetomeetyou_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 870.0
-    y: -57.0
+    x: 688.0
+    y: -94.0
     z: 0.0
     w: 1.0
   }
@@ -96,7 +96,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "\"Well my names fritz, so we\'re no longer strangers\""
+  text: "\"Nice to meet you too\""
   font: "system_font"
   id: "text"
   xanchor: XANCHOR_NONE
@@ -116,7 +116,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "uncomfortable&radio_parent"
+  parent: "nicetomeetyou_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -128,8 +128,8 @@ nodes {
 }
 nodes {
   position {
-    x: 873.0
-    y: -353.0
+    x: 689.0
+    y: -398.0
     z: 0.0
     w: 1.0
   }
@@ -162,7 +162,7 @@ nodes {
   text: "[option 1]\n"
   "[continue walking]"
   font: "system_font"
-  id: "carryonwalking"
+  id: "continuewalking"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -180,7 +180,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "uncomfortable&radio_parent"
+  parent: "nicetomeetyou_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0

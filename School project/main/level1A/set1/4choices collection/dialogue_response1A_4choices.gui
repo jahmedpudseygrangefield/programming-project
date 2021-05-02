@@ -1,4 +1,4 @@
-script: "/main/level1A/dialogue_choices/dialogue0/dialogue_response1A_fritz.gui_script"
+script: "/main/level1A/set1/4choices collection/dialogue_response1A_4choices.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"
@@ -11,8 +11,8 @@ background_color {
 }
 nodes {
   position {
-    x: -167.0
-    y: 603.0
+    x: -134.0
+    y: 585.0
     z: 0.0
     w: 1.0
   }
@@ -43,7 +43,7 @@ nodes {
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
   texture: ""
-  id: "slim_parent"
+  id: "4choices_parent"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -65,8 +65,8 @@ nodes {
 }
 nodes {
   position {
-    x: 669.0
-    y: -151.0
+    x: 634.0
+    y: -136.0
     z: 0.0
     w: 1.0
   }
@@ -96,8 +96,8 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "\"Well, I guess its my name. Anyways,\n"
-  "what kind of name is slim?\""
+  text: "\"Well, given that we\'ve gotten introductions out \n"
+  "of the way, what brings you here?\""
   font: "system_font"
   id: "text"
   xanchor: XANCHOR_NONE
@@ -117,7 +117,7 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "slim_parent"
+  parent: "4choices_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
@@ -129,8 +129,8 @@ nodes {
 }
 nodes {
   position {
-    x: 665.0
-    y: -453.0
+    x: 360.0
+    y: -434.0
     z: 0.0
     w: 1.0
   }
@@ -147,8 +147,8 @@ nodes {
     w: 1.0
   }
   size {
-    x: 330.0
-    y: 75.0
+    x: 200.0
+    y: 100.0
     z: 0.0
     w: 1.0
   }
@@ -161,9 +161,9 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "[option 1]\n"
-  "Well... uhm, I guess slim is just my name"
+  "Dont worry about it"
   font: "system_font"
-  id: "mynameslim"
+  id: "dontworry"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
@@ -181,7 +181,71 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "slim_parent"
+  parent: "4choices_parent"
+  layer: ""
+  inherit_alpha: true
+  alpha: 1.0
+  outline_alpha: 1.0
+  shadow_alpha: 1.0
+  template_node_child: false
+  text_leading: 1.0
+  text_tracking: 0.0
+}
+nodes {
+  position {
+    x: 834.0
+    y: -435.0
+    z: 0.0
+    w: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+    z: 0.0
+    w: 1.0
+  }
+  color {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  type: TYPE_TEXT
+  blend_mode: BLEND_MODE_ALPHA
+  text: "[option 2]\n"
+  "[ignore the question]"
+  font: "system_font"
+  id: "ignore"
+  xanchor: XANCHOR_NONE
+  yanchor: YANCHOR_NONE
+  pivot: PIVOT_CENTER
+  outline {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  shadow {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+  adjust_mode: ADJUST_MODE_FIT
+  line_break: false
+  parent: "4choices_parent"
   layer: ""
   inherit_alpha: true
   alpha: 1.0
