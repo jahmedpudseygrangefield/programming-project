@@ -1,7 +1,0 @@
-function init(self)
-	msg.post("level1A:/trigger#dialogue_trigger1A_fritz", "disable")
-	msg.post("level1A:/trigger#dialogue_trigger1A_littletired&becausetired", "disable")
-	msg.post("level1A:/trigger#dialogue_trigger1A_might&fine", "disable")
-	msg.post("level1A:/trigger#dialogue_trigger1A_nicetomeetyou", "disable")
-	msg.post("level1A:/trigger#dialogue_trigger1A_uncomfortable&voiceonradio", "disable")
-end

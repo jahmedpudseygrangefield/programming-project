@@ -8,5 +8,5 @@ function init(self)
 
 
 	--WIP test 
-	msg.post("/trigger#test_level_loader", "disable")
+	msg.post("/trigger#level_trigger_whatname", "disable")
 end

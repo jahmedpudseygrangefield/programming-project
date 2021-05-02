@@ -636,22 +636,7 @@ embedded_instances {
 }
 embedded_instances {
   id: "disabler"
-  data: "components {\n"
-  "  id: \"dialogue_trigger_disabler\"\n"
-  "  component: \"/main/level1A/dialogue_trigger_disabler_1A.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
+  data: ""
   position {
     x: 0.0
     y: 0.0
@@ -928,8 +913,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 1191.0
-    y: 856.0
+    x: 1208.0
+    y: 839.0
     z: 0.0
   }
   rotation {

@@ -5,12 +5,12 @@ function init(self)
 end
 
 function on_message(self, message_id, message, sender)
-	if message_id == hash("dialogue_response1A_fritz") then 
+	if message_id == hash("dialogue_response_fritz") then 
 		local node_slimname = gui.get_node("slim_parent") 
 		gui.set_enabled(node_slimname, true)
 
 		msg.post(".", "acquire_input_focus")
-		msg.post("/trigger#dialogue_trigger1A_fritz", "disable")
+		msg.post("/trigger#dialogue_trigger_fritz", "disable")
 	end
 end
 
@@ -23,8 +23,8 @@ function on_input(self, action_id, action)
 		msg.post(".", "release_input_focus")
 
 		--Disables collision & enables trigger for next apropriate response 
-		msg.post("/collision#level1A_dialogue0_collision", "disable")
-		msg.post("", "enable") -- need to add next step triggers 
+		msg.post("/collion_objects#dialogue_fritz_collision", "disable")
+		--msg.post("", "enable") -- need to add next step triggers 
 
 	end
 end

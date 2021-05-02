@@ -38,17 +38,17 @@ function on_message(self, message_id, message, sender, enter, other_id)
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_youtoo") then
 		msg.post("level0:/dialogue_response_youtoo", "dialogue_response_youtoo")
 
-		--level0 - level loading - WIP 
-		--Checks if a trigger has been detected to load the corresponding level
-		--here where the next set of triggers would usually be loaded, will be handled in the loader section but only once
-	elseif message_id == hash("trigger_response") and message.group == hash("test_level_loader") then 
-		msg.post("main:/controller", "load_level1A")		
+		--[[ WIP - New method of handling level passing between collections;
+		based on level collision at the end, an apropriate mini collection will load 
+		]]
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_whatname") then 
+		msg.post("main:/controller", "load_level1A_fritz")
 
 		
 		--===================================================================
 		--LEVEL 1A:
-	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_fritz") then
-		msg.post("level1A:/dialogue_response1A_fritz", "dialogue_response1A_fritz")
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_fritz") then
+		msg.post("level1A_fritz:/dialogue_response_fritz", "dialogue_response_fritz")
 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger1A_littletired&becausetired") then 
 		msg.post("level1A:/dialogue_response1A_littletired&becausetired", "dialogue_response1A_littletired&becausetired")
