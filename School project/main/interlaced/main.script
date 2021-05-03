@@ -14,7 +14,7 @@ function init(self)
 	--self.current_collection = "#menu_proxy"	
 
 	--used for jumping to collections to test
-	msg.post("#level1A_then&howknow_proxy", "load")
+	msg.post("#level1A_dont&rather_proxy", "load")
 end
 
 function final(self)
@@ -88,5 +88,25 @@ function on_message(self, message_id, message, sender)
 		msg.post("#level1A_then&howknow_proxy", "load")
 		self.current_collection = "#level1A_then&howknow_proxy"
 
+		--1A - SET 2
+	elseif message_id == hash("load_level1A_ignore&ignore") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_ignore&ignore_proxy", "load")
+		self.current_collection = "#level1A_ignore&ignore_proxy"
+
+	elseif message_id == hash("load_level1A_dontworry&rathernot") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_dont&rather_proxy", "load")
+		self.current_collection = "#level1A_dont&rather_proxy"
+
+	elseif message_id == hash("load_level1A_okthen") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("level1A_okthen_proxy", "load")
+		self.current_collection = "#level1A_okthen_proxy"
+
+	elseif message_id == hash("load_level1A_whatdoyoumean") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_whatdoyoumean_proxy", "load")
+		self.current_collection = "#level1A_whatdoyoumean_proxy"
 	end
 end

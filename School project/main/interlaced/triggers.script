@@ -92,7 +92,7 @@ function on_message(self, message_id, message, sender, enter, other_id)
 
 
 		--SET 1 - DIALOGUE PAIRINGS:
-	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_4choices") then 
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_4choices") then -- this quads up
 		msg.post("level1A_4choices:/dialogue_response_4choices", "dialogue_response_4choices")	
 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_dont&rather") then 
@@ -100,5 +100,22 @@ function on_message(self, message_id, message, sender, enter, other_id)
 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_then&howknow") then 
 		msg.post("level1A_then&howknow:/dialogue_response_then&howknow", "dialogue_response_then&howknow")
- 	end
+
+
+
+		--SET 1 - Level pairings
+	elseif message_id == hash ("trigger_response") and message.group == hash("level_trigger_ignore") then -- doubles up
+		msg.post("main:/controller", "load_level1A_ignore&ignore") 
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_dontworry") then 
+		msg.post("main:/controller", "load_level1A_dontworry&rathernot")
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_rathernot") then 
+		msg.post("main:/controller", "load_level1A_dontworry&rathernot")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_okthen") then 
+		msg.post("main:/controller", "load_level1A_okthen")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_whatdoyoumean") then 
+		msg.post("main:/controller", "load_level1A_whatdoyoumean")
+	end
 end

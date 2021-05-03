@@ -16,7 +16,7 @@ end
 
 function on_input(self, action_id, action)
 	--     dialogue option 
-	if action_id == hash("touch") and gui.pick_node(gui.get_node("dontworry"), action.x, action.y) then
+	if action_id == hash("touch") and gui.pick_node(gui.get_node("rathernot"), action.x, action.y) then
 		--GUI disappears after option is selected & takesaway input 
 		local  node_dontrather = gui.get_node("dont&rather_parent")
 		gui.set_enabled(node_dontrather, false) 
@@ -26,7 +26,7 @@ function on_input(self, action_id, action)
 		msg.post("/collion_objects#dialogue_collision_dont&rather", "disable")
 		msg.post("/trigger#level_trigger_dontworry", "enable") -- need to add next step triggers 
 
-	elseif action_id == hash("touch") and gui.pick_node(gui.get_node("rathernot"), action.x, action.y) then
+	elseif action_id == hash("touch") and gui.pick_node(gui.get_node("ignore"), action.x, action.y) then
 		--GUI disappears after option is selected & takesaway input 
 		local  node_dontrather = gui.get_node("dont&rather_parent")
 		gui.set_enabled(node_dontrather, false) 
@@ -34,7 +34,7 @@ function on_input(self, action_id, action)
 
 		--Disables collision & enables trigger for next apropriate response 
 		msg.post("/collion_objects#dialogue_collision_dont&rather", "disable")
-		msg.post("/trigger#level_trigger_rathernot", "enable") -- need to add next step triggers 
+		msg.post("/trigger#level_trigger_ignore", "enable") -- need to add next step triggers 
 
 	end
 end
