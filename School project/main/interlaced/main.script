@@ -13,9 +13,9 @@ function init(self)
 	--msg.post("#menu_proxy", "load") --loads the menu system when the thing is booted
 	--self.current_collection = "#menu_proxy"	
 
-	msg.post("#level1A_dont&rather_proxy", "load")
-	self.current_collection = "#level1A_dont&rather_proxy"
 
+	msg.post("#level1A_then&howknow_proxy", "load")
+	self.current_collection = "#level1A_then&howknow_proxy"
 end
 
 function final(self)

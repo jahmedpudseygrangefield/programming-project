@@ -117,5 +117,19 @@ function on_message(self, message_id, message, sender, enter, other_id)
 
 	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_whatdoyoumean") then 
 		msg.post("main:/controller", "load_level1A_whatdoyoumean")
+
+		--SET 2 DIALOGUE PAIRINGS 
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_dontworry&rathernot") then 
+		msg.post("level1A_dont&rathernot:/dialogue_response_dontworry&rathernot", "dialogue_response_dontworry&rathernot")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_ignore&ignore") then 
+		msg.post("level1A_ignore&ignore:/dialogue_response_ignore&ignore", "dialogue_response_ignore&ignore")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_okthen") then
+		msg.post("level1A_okthen:/dialogue_response_okthen", "dialogue_response_okthen")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_whatdoyoumean") then 
+		msg.post("level1A_whatdoyoumean:/dialogue_response_whatdoyoumean", "dialogue_response_whatdoyoumean")
 	end
 end

@@ -163,7 +163,7 @@ nodes {
   "Its a private matter,\n"
   " lets just leave it at that"
   font: "system_font"
-  id: "private matter"
+  id: "private_matter"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER
