@@ -1,0 +1,4 @@
+function init(self)
+	msg.post("/trigger#level_trigger_dontworry", "disable")
+	msg.post("/trigger#level_trigger_ignore", "disable")
+end 
