@@ -1,0 +1,45 @@
+function init(self)
+	msg.post(".", "release_input_focus")
+	--disables the GUI on init 
+	local node_nothing = gui.get_node("nothing_response_parent")
+	gui.set_enabled(node_nothing, false)
+end
+
+function on_message(self, message_id, message, sender, enter, other_id)
+	if message_id == hash("dialogue_choice_nothing") then 
+		--makes the GUI appear 
+		local node_nothing = gui.get_node("nothing_response_parent")
+		gui.set_enabled(node_nothing, true)
+		--deletes the activation trigger (stops doubling glitch)
+		msg.post("/trigger#dialogue_trigger_nothing", "disable")
+		--Allows inputs when the GUI appears 
+		msg.post(".", "acquire_input_focus")
+	end
+end
+
+
+function on_input(self, action_id, action)
+	--yourname dialogue option
+	if action_id == hash("touch") and gui.pick_node(gui.get_node("stayquiet"), action.x, action.y) then
+		--GUI disappears after option is selected & takesaway input 
+		local node_nothing = gui.get_node("nothing_response_parent")
+		gui.set_enabled(node_nothing, false) 
+		msg.post(".", "release_input_focus")
+
+		--Disables collision & enables trigger for next apropriate response 
+		msg.post("/collision#dialogue1_collision", "disable")
+		msg.post("/trigger#dialogue_trigger_stayquiet", "enable") 
+
+		--youtoo dialogue response option 
+	elseif action_id == hash("touch") and gui.pick_node(gui.get_node("perhaps"), action.x, action.y) then
+		--GUI disappears after option is selected & takesaway input 
+		local node_nothing = gui.get_node("nothing_response_parent")
+		gui.set_enabled(node_nothing, false) 
+		msg.post(".", "release_input_focus")
+
+		--Disables collision & enables trigger for next apropriate response 
+		msg.post("/collision#dialogue1_collision", "disable")
+		msg.post("/trigger#dialogue_trigger_perhaps", "enable") 
+	end
+end
+

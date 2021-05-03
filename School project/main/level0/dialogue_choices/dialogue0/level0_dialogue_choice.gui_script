@@ -1,0 +1,49 @@
+--[[ 
+General plan: 
+Initially disable all gui's 
+Then depending on the first choice the next apropriate GUI should appear 
+hopefully a single script will be necessary 
+]]
+
+--disables the dialogue choice gui straight away 
+function init(self)
+	msg.post(".", "release_input_focus") --1) initially restricts input from the mouse 
+	local node0 = gui.get_node("dialogue_choice0_parent")
+	gui.set_enabled(node0, false)
+end
+
+--when the trigger is activated the GUI appears
+function on_message(self, message_id, message, sender)
+	if message_id == hash("level0_dialogue_choice") then
+		local node0 = gui.get_node("dialogue_choice0_parent") 
+		gui.set_enabled(node0, true)
+		msg.post(".", "acquire_input_focus") --2) then allows input from the mouse when gui is appears
+
+		--this should completely disable the related trigger stopping the double glitch
+		msg.post("/trigger#dialogue_trigger0", "disable")
+	end
+end
+
+--DIALOGUE RESPONSES 
+function on_input(self, action_id, action)
+	--Dialogue slim option 
+	if action_id == hash("touch") and gui.pick_node(gui.get_node("slim"), action.x, action.y) then 
+		local node0 = gui.get_node("dialogue_choice0_parent")
+		gui.set_enabled(node0, false) 
+		msg.post(".", "release_input_focus") -- 3) then restricts mouse input when the GUI dissapears
+		--ALSO when its pressed, a message is sent to movement script which properally enables movement again
+		msg.post("/collision#dialogue0_collision", "disable")
+		--enables the trigger of the next GUI related to this option 
+		msg.post("/trigger#dialogue_trigger_slim", "enable")
+--==========================================================================================
+--dialogue keep silent option 
+	elseif action_id == hash("touch") and gui.pick_node(gui.get_node("nothing"), action.x, action.y) then 
+		local node0 = gui.get_node("dialogue_choice0_parent")
+		gui.set_enabled(node0, false) 
+		msg.post(".", "release_input_focus") -- 3) then restricts mouse input when the GUI dissapears
+		--ALSO when its pressed, a message is sent to movement script which properally enables movement again
+		msg.post("/collision#dialogue0_collision", "disable")
+		--enables the trigger of the next GUI related to this option
+		msg.post("/trigger#dialogue_trigger_nothing", "enable")
+	end
+end

@@ -8,16 +8,128 @@
 5) choice depends from there
 --]]
 
-
-
--- new updated script now fully working 
---will go on to elaborate on this script 
-function on_message(self, message_id, message, sender, enter)
-	--could do an 'and' connection or elaborate with 'then'
+function on_message(self, message_id, message, sender, enter, other_id)
+--LEVEL0:
+	--All level0 dialogue pairings
 	if message_id == hash("trigger_response") and message.group == hash("dialogue_trigger0") then --checks if the group associated with the trigger works too
-		msg.post("level0:/dialogue_choice", "level0_dialogue_choice")
+		msg.post("level0:/dialogue_response_0", "level0_dialogue_choice")
+		
+		--dialogue slim response 
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_slim") then
+		msg.post("level0:/dialogue_response_slim", "dialogue_choice_slim")
+		
+		--dialogue saynothing response 
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_nothing") then
+		msg.post("level0:/dialogue_response_nothing", "dialogue_choice_nothing")
 
-	elseif message_id == hash("trigger_response") and message.group == hash("level_choice0") then --checks if the group associated with the trigger works too
-		msg.post("level0:/level_choice", "level0_level_choice")
+		--dialogue stayquiet response 
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_stayquiet") then
+		msg.post("level0:/dialogue_response_stayquiet", "dialogue_response_stayquiet")
+
+		--dialogue perhaps response 
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_perhaps") then
+		msg.post("level0:/dialogue_response_perhaps", "dialogue_response_perhaps")
+
+		--dialogue yourname response 
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_yourname") then
+		msg.post("level0:/dialogue_response_yourname", "dialogue_response_yourname")
+
+		--dialogue youtoo response
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_youtoo") then
+		msg.post("level0:/dialogue_response_youtoo", "dialogue_response_youtoo")
+
+
+
+		--[[ WIP - New method of handling level passing between collections;
+		based on level collision at the end, an apropriate mini collection will load 
+		]]
+		--LEVEL LOADING TRIGGERS - LEVEL 0 --> LEVEL 1A
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_whatname") then 
+		msg.post("main:/controller", "load_level1A_fritz")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_uncomfortable&voiceardio") then 
+		msg.post("main:/controller", "load_level1A_uncomfortable&voiceardio")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_nicetomeet") then 
+		msg.post("main:/controller", "load_level1A_nicetomeet")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_littletired&becausetired") then 
+		msg.post("main:/controller", "load_level1A_littletired&becausetired")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_fine&might") then 
+		msg.post("main:/controller", "load_level1A_fine&might")
+
+		
+--===========================================================================================
+		--LEVEL 1A:
+		
+		--SET 0 - dialogue pairings 
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_fritz") then
+		msg.post("level1A_fritz:/dialogue_response_fritz", "dialogue_response_fritz")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_littletired&becausetired") then 
+		msg.post("level1A_littletired&becausetired:/dialogue_response_littletired&becausetired", "dialogue_response_littletired&becausetired")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_might&fine") then 
+		msg.post("level1A_might&fine:/dialogue_response_might&fine", "dialogue_response_might&fine")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_nicetomeetyou") then 
+		msg.post("level1A_nicetomeetyou:/dialogue_response_nicetomeetyou", "dialogue_response_nicetomeetyou")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_uncomfortable&voiceradio") then 
+		msg.post("level1A_uncomfortable&voiceradio:/dialogue_response_uncomfortable&voiceonradio", "uncomfortable&voiceonradio")
+
+		--SET 0 - level pairings
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_4choices") then 
+		msg.post("main:/controller", "load_level1A_4choices")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_dontgohiking") then 
+		msg.post("main:/controller", "load_level1A_dont&rather")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_howyouknow") then
+		msg.post("main:/controller", "load_level1A_then&howknow")
+
+
+
+		--SET 1 - DIALOGUE PAIRINGS:
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_4choices") then -- this quads up
+		msg.post("level1A_4choices:/dialogue_response_4choices", "dialogue_response_4choices")	
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_dont&rather") then 
+		msg.post("level1A_dont&rather:/dialogue_response_dont&rather", "dialogue_response_dont&rather")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_then&howknow") then 
+		msg.post("level1A_then&howknow:/dialogue_response_then&howknow", "dialogue_response_then&howknow")
+
+
+
+		--SET 1 - Level pairings
+	elseif message_id == hash ("trigger_response") and message.group == hash("level_trigger_ignore") then -- doubles up
+		msg.post("main:/controller", "load_level1A_ignore&ignore") 
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_dontworry") then 
+		msg.post("main:/controller", "load_level1A_dontworry&rathernot")
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_rathernot") then 
+		msg.post("main:/controller", "load_level1A_dontworry&rathernot")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_okthen") then 
+		msg.post("main:/controller", "load_level1A_okthen")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_whatdoyoumean") then 
+		msg.post("main:/controller", "load_level1A_whatdoyoumean")
+
+		--SET 2 DIALOGUE PAIRINGS 
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_dontworry&rathernot") then 
+		msg.post("level1A_dont&rathernot:/dialogue_response_dontworry&rathernot", "dialogue_response_dontworry&rathernot")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_ignore&ignore") then 
+		msg.post("level1A_ignore&ignore:/dialogue_response_ignore&ignore", "dialogue_response_ignore&ignore")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_okthen") then
+		msg.post("level1A_okthen:/dialogue_response_okthen", "dialogue_response_okthen")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_whatdoyoumean") then 
+		msg.post("level1A_whatdoyoumean:/dialogue_response_whatdoyoumean", "dialogue_response_whatdoyoumean")
 	end
 end

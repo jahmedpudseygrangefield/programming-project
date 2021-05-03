@@ -1,0 +1,4 @@
+function init(self)
+	msg.post("/trigger#level_trigger_dontgohiking", "disable")
+	msg.post("/trigger#level_trigger_howyouknow", "disable")
+end

@@ -15,4 +15,8 @@ title = School project
 
 [physics]
 gravity_y = 0.0
+trigger_overlap_capacity = 16
+
+[collection_proxy]
+max_count = 32
 
