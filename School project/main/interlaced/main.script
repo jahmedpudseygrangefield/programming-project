@@ -10,12 +10,9 @@ but its being redesigned to fit my needs and after a while it will be unrecognis
 
 function init(self) 
 	msg.post(".", "acquire_input_focus") --allows for inputs (gonna be necessary for the menu system
-	--msg.post("#menu_proxy", "load") --loads the menu system when the thing is booted
-	--self.current_collection = "#menu_proxy"	
+	msg.post("#menu_proxy", "load") --loads the menu system when the thing is booted
+	self.current_collection = "#menu_proxy"	
 
-
-	msg.post("#level1A_then&howknow_proxy", "load")
-	self.current_collection = "#level1A_then&howknow_proxy"
 end
 
 function final(self)
