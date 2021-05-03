@@ -13,8 +13,9 @@ function init(self)
 	--msg.post("#menu_proxy", "load") --loads the menu system when the thing is booted
 	--self.current_collection = "#menu_proxy"	
 
-	--used for jumping to collections to test
 	msg.post("#level1A_dont&rather_proxy", "load")
+	self.current_collection = "#level1A_dont&rather_proxy"
+
 end
 
 function final(self)
@@ -96,12 +97,12 @@ function on_message(self, message_id, message, sender)
 
 	elseif message_id == hash("load_level1A_dontworry&rathernot") then 
 		msg.post(self.current_collection, "unload")
-		msg.post("#level1A_dont&rather_proxy", "load")
-		self.current_collection = "#level1A_dont&rather_proxy"
+		msg.post("#level1A_dontworry&rathernot_proxy", "load")
+		self.current_collection = "#level1A_dontworry&rathernot_proxy"
 
 	elseif message_id == hash("load_level1A_okthen") then 
 		msg.post(self.current_collection, "unload")
-		msg.post("level1A_okthen_proxy", "load")
+		msg.post("#level1A_okthen_proxy", "load")
 		self.current_collection = "#level1A_okthen_proxy"
 
 	elseif message_id == hash("load_level1A_whatdoyoumean") then 
