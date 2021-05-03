@@ -88,7 +88,17 @@ function on_message(self, message_id, message, sender, enter, other_id)
 
 	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_howyouknow") then
 		msg.post("main:/controller", "load_level1A_then&howknow")
-		
-		
+
+
+
+		--SET 1 - DIALOGUE PAIRINGS:
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_4choices") then 
+		msg.post("level1A_4choices:/dialogue_response_4choices", "dialogue_response_4choices")	
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_dont&rather") then 
+		msg.post("level1A_dont&rather:/dialogue_response_dont&rather", "dialogue_response_dont&rather")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_then&howknow") then 
+		msg.post("level1A_then&howknow:/dialogue_response_then&howknow", "dialogue_response_then&howknow")
  	end
 end
