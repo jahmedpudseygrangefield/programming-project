@@ -57,12 +57,13 @@ function on_message(self, message_id, message, sender, enter, other_id)
 		msg.post("main:/controller", "load_level1A_littletired&becausetired")
 
 	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_fine&might") then 
-		msg.post("main:/controller", "load_level1A_fine&mighte")
+		msg.post("main:/controller", "load_level1A_fine&might")
 
 		
-		--===================================================================
+--===========================================================================================
 		--LEVEL 1A:
-		--dialogue pairings 
+		
+		--SET 0 - dialogue pairings 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_fritz") then
 		msg.post("level1A_fritz:/dialogue_response_fritz", "dialogue_response_fritz")
 
@@ -77,6 +78,10 @@ function on_message(self, message_id, message, sender, enter, other_id)
 
 	elseif message_id == hash("trigger_response") and message.group == hash("dialogue_trigger_uncomfortable&voiceradio") then 
 		msg.post("level1A_uncomfortable&voiceradio:/dialogue_response_uncomfortable&voiceonradio", "uncomfortable&voiceonradio")
+
+		--SET 0 - level pairings
+
+		
 		
  	end
 end
