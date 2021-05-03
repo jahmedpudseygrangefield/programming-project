@@ -80,7 +80,14 @@ function on_message(self, message_id, message, sender, enter, other_id)
 		msg.post("level1A_uncomfortable&voiceradio:/dialogue_response_uncomfortable&voiceonradio", "uncomfortable&voiceonradio")
 
 		--SET 0 - level pairings
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_4choices") then 
+		msg.post("main:/controller", "load_level1A_4choices")
 
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_dontgohiking") then 
+		msg.post("main:/controller", "load_level1A_dont&rather")
+
+	elseif message_id == hash("trigger_response") and message.group == hash("level_trigger_howyouknow") then
+		msg.post("main:/controller", "load_level1A_then&howknow")
 		
 		
  	end

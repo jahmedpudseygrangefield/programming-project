@@ -44,7 +44,7 @@ function on_message(self, message_id, message, sender)
 
 
 		--WIP apart of the new message solution - will contain many mini collections
-		--MINI COLLECTIONS - 1A:
+		--MINI COLLECTIONS - 1A - SET 0:
 	elseif message_id == hash("load_level1A_fritz") then 
 		msg.post(self.current_collection, "unload")
 		msg.post("#level1A_fritz_proxy", "load")
@@ -69,6 +69,22 @@ function on_message(self, message_id, message, sender)
 		msg.post(self.current_collection, "unload")
 		msg.post("#level1A_might&fine_proxy", "load")
 		self.current_collection = "#level1A_might&fine_proxy"
+
+		--1A - SET 1:
+	elseif message_id == hash("load_level1A_4choices") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_4choices_proxy", "load")
+		self.current_collection = "#level1A_4choices_proxy"
+
+	elseif message_id == hash("load_level1A_dont&rather") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_dont&rather_proxy", "load")
+		self.current_collection = "#level1A_dont&rather_proxy"
+
+	elseif message_id == hash("load_level1A_then&howknow") then 
+		msg.post(self.current_collection, "unload")
+		msg.post("#level1A_then&howknow_proxy", "load")
+		self.current_collection = "#level1A_then&howknow_proxy"
 
 	end
 end
