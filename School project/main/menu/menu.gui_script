@@ -10,8 +10,6 @@ end
 function on_input(self, action_id, action)
 	if action.pressed and gui.pick_node(gui.get_node("start"), action.x, action.y) then 
 		msg.post("main:/controller", "introduction") --when this is read this will be sent to main menu and loaded
-		msg.post("main:/controller", "cam_activate") --this is sent out universially to be picked up by the camera function
-
 
 		--quit function
 	elseif action.pressed and gui.pick_node(gui.get_node("quit"), action.x, action.y) then

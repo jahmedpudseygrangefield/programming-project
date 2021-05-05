@@ -24,6 +24,5 @@ function on_input(self, action_id, action)
 
 		--Disables collision & enables trigger for next apropriate response 
 		msg.post("/collion_objects#dialogue_collision_dontworry&rathernot", "disable")
-		msg.post("", "enable") -- need to add next step triggers 
 	end
 end
