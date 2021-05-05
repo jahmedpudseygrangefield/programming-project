@@ -1,4 +1,0 @@
-function init(self)
-	collectionfactory.create("#player_sprite") --initiates the collection factory, so player animation works
-end
---this method is not efficent at all, but it will work for now - will come back later
